@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Seemore from "../component/Seemore";
 import Topbar from "../component/Topbar";
 import "../scss/style.scss"
@@ -8,10 +9,10 @@ export default function Home(){
                     {/* 頁首區 */}
                     <div id="topbar">
                         <h1 className="logo">
-                            <a href="/">
+                        <Link to="/" >
                                 <img className="logo-w" src="./images/logow.png" alt="" />
                                 <img className="logo-b" src="./images/logo.svg" alt="" />
-                            </a>
+                            </Link>
                         </h1>
                         <Topbar/>
                         {/* <Routes>                        

@@ -1,6 +1,7 @@
 import '../scss/style-shop.scss'
 import Topbar from "../component/Topbar";
 import Seemore from '../component/Seemore';
+import { Link } from 'react-router-dom';
 
 export default function Shop() {
 
@@ -12,10 +13,10 @@ export default function Shop() {
                     <div id="topbar">
                         {/* h1 */}
                         <h1 className="logo">
-                            <a href="#">
+                            <Link to="/" >
                                 <img className="logo-w" src="./images/logow.png" alt="" />
                                 <img className="logo-b" src="./images/logo.svg" alt="" />
-                            </a>
+                            </Link>
                         </h1>
                         <Topbar />
                     </div>

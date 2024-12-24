@@ -124,8 +124,8 @@ body{
             padding: 0;
 
             .first {
-                margin-right: 40px;
                 position: relative;
+                margin-right: 30px;
 
                 &:hover {
                     transition: .5s;
@@ -134,34 +134,6 @@ body{
             }
 
             @for $num from 1 through 3 {
-                $a : 50 - ($num * 190);
-
-                @keyframes show#{$num} {
-                    from {
-                        opacity: 0;
-                        transform: translateX(0px);
-                    }
-
-                    to {
-                        opacity: 1;
-                        transform: translateX(#{$a}px);
-                    }
-                }
-
-                @keyframes hide#{$num} {
-                    from {
-                        opacity: 1;
-                        display: flex;
-                        transform: translateX(#{$a}px);
-                    }
-
-                    to {
-                        opacity: 0;
-                        transform: translateX(0px);
-                        display: none;
-                    }
-                }
-
                 .secondary#{$num} {
                     position: absolute;
                     margin: 0 20px;
@@ -169,7 +141,6 @@ body{
                     display: none;
                     animation: hide#{$num} 0.8s both;
 
-                    // 檢查父子層級
                     &.show#{$num} {
                         display: flex;
                         animation: show#{$num} 0.8s both;
@@ -228,7 +199,50 @@ body{
             }
         }
 
+        @media ($mediaMdDown) {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+
+            ul {
+
+                @for $num from 1 through 4 {
+                    .secondary#{$num} {
+                        position: absolute;
+                        margin: 0;
+                        top: 70px;
+                        right: 0;
+                        display: none;
+                        animation: hide2-#{$num} 0.8s both;
+
+                        &.show#{$num} {
+                            display: flex;
+                            animation: show2-#{$num} 0.8s both;
+
+                            :hover {
+                                transition: .5s;
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .hamburger {
+                align-self: flex-end;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media ($mediaSm) {
+            .hamburger {
+                width: 60px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
     }
+
 
 }
 
