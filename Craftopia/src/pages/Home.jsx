@@ -43,6 +43,7 @@ export default function Home(){
                                     <a href="https://www.google.com/?authuser=0" className="card contain1">
                                         <h3 className="title-class">皮<br />革</h3>
                                         <h3 className="flex pt1">皮革</h3>
+                                        <p className="flex pt3">點擊查看更多</p>
                                         <p className="flex pt2">皮革工藝涵蓋多元的技法：手縫、打孔、染色、壓紋、編織等，每個步驟都需要耐心與專注。
                                             隨著使用時間的累積，皮革製品會因使用者的愛護而產生獨特的包漿與風韻，展現出歲月淬煉的美感。</p>
                                         <img id="card1" src="./images/leather.jpg" alt="" />
@@ -50,12 +51,14 @@ export default function Home(){
                                     <a href="https://www.google.com/?authuser=0" className="card contain2">
                                         <h3 className="title-class">金<br />工</h3>
                                         <h3 className="flex pt1">金工</h3>
+                                        <p className="flex pt3">點擊查看更多</p>
                                         <p className="flex pt2">「金工」可以說是金屬工藝，而不是只限於「金」，我們最常使用的創作材料包含純銀、黃銅、紅銅。甚至也不只限於用金屬材料來加工，也有「蠟雕」、「翻模」等方式，都可以協助金屬工藝的創作！</p>
                                         <img id="card2" src="./images/jewelry.jpg" alt="" />
                                     </a>
                                     <a href="https://www.google.com/?authuser=0" className="card contain3">
                                         <h3 className="title-class">陶<br />瓷</h3>
                                         <h3 className="flex pt1">陶瓷</h3>
+                                        <p className="flex pt3">點擊查看更多</p>
                                         <p className="flex pt2">陶瓷泛指以黏土塑形，再經過燒製成形的器物。陶器，一般用黏土或陶土，經捏製成形後燒製而成；瓷器則由瓷石、高嶺土等組成，外表施釉或經手工彩繪，高溫（約1200℃–1400℃）窯內燒製而成。</p>
                                         <img id="card3" src="./images/clay.jpg" alt="" />
                                     </a>
