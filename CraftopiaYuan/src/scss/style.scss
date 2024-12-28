@@ -4,11 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Noto+Sans+TC:wght@100..900&display=swap');
 
 /*共用區*/
-#body {
+#searchlesson {
     font-family: 'Noto Sans TC';
 }
 
 .seemore-btn {
+    font-family: "Braah One", serif;
     margin-left: auto;
     display: inline-flex;
     align-items: center;
@@ -40,7 +41,8 @@
         .ball {
             filter: hue-rotate(30deg) brightness(140%);
             transition: .7s cubic-bezier(.3, 1.77, .36, .69)
-            /*cubic-bezier(.5,2.77,.25,.35)*/;
+                /*cubic-bezier(.5,2.77,.25,.35)*/
+            ;
             transform: translateX(150px);
         }
 
@@ -105,7 +107,7 @@
 .blob-10,
 .blob-14,
 .about-blob4 {
-    animation: shake-slow;
+    animation: shake-slowhome;
     animation-duration: 6s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -315,6 +317,7 @@
 
 
 }
+
 #topbar-b {
     display: flex;
     position: fixed;
@@ -674,7 +677,6 @@
         width: 600px;
         right: -100px;
         top: -480px;
-        z-index: 887;
     }
 
     .blob-8 {
@@ -682,7 +684,6 @@
         width: 800px;
         right: -200px;
         top: 500px;
-        z-index: 887;
     }
 
     #tool {
@@ -945,7 +946,6 @@
         display: flex;
         justify-content: center;
         position: relative;
-        z-index: 998;
 
         div {
             margin: 20px 0;
@@ -966,6 +966,8 @@
         #cho-1 {
             margin: 0 10% 180px;
             transition: .3s;
+            position: relative;
+            z-index: 995;
 
             &:hover {
                 transform: scale(1.1);
@@ -1282,7 +1284,6 @@
         width: 500px;
         right: 5px;
         top: 20px;
-        z-index: 888;
     }
 
     .blob-14 {

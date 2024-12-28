@@ -42,7 +42,7 @@ export default function Home(){
                                         <img src="./images/title-lesson.png" alt="" />
                                     </figure>
                                 </header>
-                                <div className="wrapper" data-aos="fade-up">
+                                <div className="wrapper" data-aos="fade-left">
                                     <a href="https://www.google.com/?authuser=0" className="card contain1">
                                         <h3 className="title-class">皮<br />革</h3>
                                         <h3 className="flex pt1">皮革</h3>
@@ -81,11 +81,11 @@ export default function Home(){
                         <header>
                             {/* 預留給標題 */}
                             {/* <a className="btn-classes" href=""><span>All class</span></a> */}
-                            <p className="btn-classes" data-aos="fade-up"><Seemore text={'All class'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /></p>
+                            <p className="btn-classes" data-aos="fade-right"><Seemore text={'All class'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /></p>
                         </header>
                         <section id="choice">
                             <div className="arr1">
-                                <article id="cho-1" data-aos="fade-up">
+                                <article id="cho-1" data-aos="fade-right">
                                     <img src="./images/cho-1.png" alt="" />
                                     <div className="cho-content">
                                         <h2>聖誕節前夕來場約會!!<br />『 TAO TAO 工作室』雙人陶藝體驗課</h2>
@@ -95,7 +95,7 @@ export default function Home(){
                                         <Seemore text={'see more'} imgBall={"./images/Vector-circle-y.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} />
                                     </div>
                                 </article>
-                                <article id="cho-2" data-aos="fade-up">
+                                <article id="cho-2" data-aos="fade-left">
                                     <img src="./images/cho-2.png" alt="" />
                                     <div className="cho-content">
                                         <h2>聖誕節前夕來場約會!!<br />『 TAO TAO 工作室』雙人陶藝體驗課</h2>
@@ -128,13 +128,13 @@ export default function Home(){
                         <section id="activity">
                             <div id="act-bg">
                                 <header>
-                                    <figure className="title" data-aos="fade-up">
+                                    <figure className="title" data-aos="fade-right">
                                         <img className="actTitle-str" src="./images/title-activity.png" alt="" />
                                         <img className="actTitle-row" src="./images/title-activity-row.svg" alt="" />
                                         </figure>
                                 </header>
                                 <article data-aos="fade-up">
-                                    <div className="act">
+                                    <div className="act" data-aos="fade-left">
                                         <img src="./images/act-1.png" alt="" />
                                         <div className="act-content">
                                             <p>2024 年 10 月 13 日</p>
@@ -145,7 +145,7 @@ export default function Home(){
                                         </div>
                                     </div>
                                     <figure id="act-line"><img src="./images/act-line.png" alt="" /></figure>
-                                    <div className="act">
+                                    <div className="act" data-aos="fade-left">
                                         <img src="./images/act-2.png" alt="" />
                                         <div className="act-content">
                                             <p>2024 年 10 月 13 日</p>
@@ -162,7 +162,7 @@ export default function Home(){
                             <figure className="blob-14"><img src="./images/blob-14.svg" alt="" /></figure>
                             <figure id="tool-4"><img src="./images/cSeat.png" alt="" /></figure>
                             <figure className="line-3"><img src="./images/line-3.png" alt="" /></figure>
-                            <p className="Info-btn" href="" data-aos="fade-up"><Seemore text={'All Info'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /></p>
+                            <p className="Info-btn" href="" data-aos="fade-left"><Seemore text={'All Info'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /></p>
                         </section>
                         {/* 關於我們 */}
                         {/* <figure id="us-bg"><img src="./images/aboutus-bg.png" alt="" /></figure> */}
@@ -213,14 +213,14 @@ export default function Home(){
                                         <p><strong>與他人分享體驗成果</strong></p>
                                     </article>
                                 </div>
-                                <div className="last" data-aos="fade-up">
-                                    <p><strong>
+                                <div className="last" >
+                                    <p data-aos="fade-right"><strong>
                                         Find<br />
                                         Your Own<br />
                                         Craftopia !<br />
                                     </strong>
                                     </p>
-                                    <div className="last-btn">
+                                    <div className="last-btn" data-aos="fade-left">
                                         <button>挖掘店家<img src="./images/arrow.right.png" alt="" /></button>
                                         <button>搜尋課程<img src="./images/arrow.right.png" alt="" /></button>
                                     </div>

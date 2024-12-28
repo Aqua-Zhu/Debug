@@ -272,32 +272,7 @@
     }
 }
 
-/* totop按鈕 */
-.toTop {
-    z-index: 998;
 
-    .toTop-btn {
-        border: none;
-        background: none;
-        cursor: pointer;
-
-        // transition: .3s;
-        #toTopHover {
-            // display: none;
-        }
-
-        &:hover {
-            >#toTop {
-                display: none;
-            }
-
-
-            #toTopHover {
-                display: block;
-            }
-        }
-    }
-}
 
 #introWrapper {
     display: flex;
