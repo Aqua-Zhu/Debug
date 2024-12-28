@@ -63,7 +63,7 @@ body {
 
     .qaBlob {
         position: absolute;
-        z-index: -2;
+        z-index: 2;
     }
 
     .qaLeftYellow {
@@ -240,7 +240,8 @@ body {
         #QA-right {
             // border: 1px solid tomato;
             width: 100%;
-
+            position: relative;
+            z-index: 50;
 
             >section {
                 // border: 1px solid tomato;

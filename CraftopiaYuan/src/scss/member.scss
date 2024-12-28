@@ -108,7 +108,8 @@ body {
 
 /* 會員資料區 */
 #member {
-
+    position: relative;
+    z-index: 10;
     .memberWrap {
         display: flex;
         justify-content: space-between;
@@ -465,6 +466,8 @@ body {
 
 /* 預約記錄區 */
 #reserve {
+    position: relative;
+    z-index: 10;
     .title {
         width: 70%;
         max-width: 1000px;
@@ -906,7 +909,7 @@ body {
 
     margin-bottom: 300px;
     position: relative;
-
+    z-index: 50;
     .expWrapper {
         width: 100%;
         max-width: 1000px;
@@ -1106,7 +1109,7 @@ body {
 
 /* 泡泡區 */
 .bg-blob {
-    z-index: -2;
+    z-index: 1;
 
     .infoBlob1 {
         position: absolute;
@@ -1217,30 +1220,7 @@ body {
     }
 }
 
-/* totop按鈕 */
-.toTop {
-    z-index: 30;
 
-    .toTop-btn {
-        border: none;
-        background: none;
-        cursor: pointer;
-
-        #toTopHover {
-            display: none;
-        }
-
-        &:hover {
-            >#toTop {
-                display: none;
-            }
-
-            #toTopHover {
-                display: block;
-            }
-        }
-    }
-}
 
 /* 頁尾區 */
 footer {

@@ -99,7 +99,30 @@
         }
     }
 }
+/* totop按鈕 */
+.toTop {
+    z-index: 998;
 
+    .toTop-btn {
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        #toTopHover {
+            display: none;
+        }
+
+        &:hover {
+            >#toTop {
+                display: none;
+            }
+
+            #toTopHover {
+                display: block;
+            }
+        }
+    }
+}
 /* 裝飾區動態 */
 
 .blob-1,

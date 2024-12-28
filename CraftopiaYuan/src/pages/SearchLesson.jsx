@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../scss/searchLesson.scss';
 import SearchSection from '../component/SearchSection';
 import Results from '../component/Results';
@@ -6,12 +6,16 @@ import ClassList from '../component/ClassList';
 import courseData from "../component/courseData";
 import 'csshake/dist/csshake.min.css';
 import TopbarB from '../component/TopbarB';
+import AOS from 'aos';
 
 
 
 
 export default function SearchLesson() {
-
+      useEffect(() => {
+          window.scrollTo(0, 0);
+          AOS.init();
+      }, []);
   // 課程搜尋篩選條件
   const [filteredCourses, setFilteredCourses] = useState(courseData); //初始狀態未篩選顯示所有課程
 
