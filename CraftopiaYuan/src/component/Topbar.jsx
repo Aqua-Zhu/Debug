@@ -54,7 +54,8 @@ export default function Topbar({ bannerId }) {
                 {/* 漢堡 */}
                 <nav className="navigation">
                     <ul>
-                        <li className="secondary3"><Link to="/shop"><img src="./images/findshop-btn.png" alt="發掘店家" /></Link></li>
+                        <li><Link to='/shop'>shop</Link></li>
+                        <li className="secondary3"><Link to="/classpage"><img src="./images/findshop-btn.png" alt="發掘店家" /></Link></li>
                         <li className="secondary2"><Link to='/member'><img src="./images/member-btn.png" alt="會員中心" /></Link></li>
                         <li className="secondary1"><Link to='/qa'><img src="./images/faq-btn.png" alt="常見問題" /></Link></li>
                         <li className="secondary4 first"><Link to='/search'><img src="./images/search-btn.png" alt="搜尋課程" /></Link></li>

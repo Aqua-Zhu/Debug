@@ -1915,8 +1915,11 @@
 
 
 main {
-    background-image: url('./images/background-color.png');
+    // background-image: url('./images/background-color.png');
+    // background-size: cover;
+    background-image: url(./images/BG-texture-400.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /*頁尾區*/

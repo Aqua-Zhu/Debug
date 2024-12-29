@@ -4,6 +4,7 @@ import Shop from "./pages/Shop";
 import Qa from "./pages/Qa";
 import Member from "./pages/Member";
 import SearchLesson from "./pages/SearchLesson";
+import ClassPage from "./pages/ClassPage";
 
 export default function App() {
     return (
@@ -14,6 +15,7 @@ export default function App() {
                 <Route path="/qa" element={<Qa />} ></Route>
                 <Route path="/member" element={<Member />}  ></Route>
                 <Route path="/search" element={<SearchLesson/>}></Route>
+                <Route path="/classpage" element={<ClassPage/>}></Route>
             </Routes>
         </>
     )

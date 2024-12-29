@@ -1,24 +1,23 @@
 import '../scss/style-shop.scss'
 import Topbar from "../component/Topbar";
 import Seemore from '../component/Seemore';
-import Blob4 from "../assets/blob4.svg";
-// import { Link } from 'react-router-dom';
-// import { useEffect, useRef, useState } from 'react';
-// import Hearttoggle from '../component/Hearttoggle';
+import { useEffect} from 'react';
 import ToTop from '../component/ToTop';
 import ClassCardLatest from '../component/ClassCardLatest';
+import AOS from 'aos';
 
 export default function Shop() {
-    // useEffect(() => {
-    //     window.scrollTo(0, 0)
-    // }, [])
+    
+    useEffect(()=>{
+        window.scrollTo(0,0);
+        AOS.init();
+    },[])
+
     const initialStyle = {
         position: "fixed",
         bottom: "20px",
         right: "10px",
     };
-
-
 
     return (
         <>
@@ -27,13 +26,13 @@ export default function Shop() {
                     {/* 頁首區 */}
                     <Topbar bannerId='#banner-shop' />
                     { /* banner區 */}
-                    <section id="banner-shop">
+                    <section id="banner-shop" >
                         <figure className="banner"><img src="./images/banner-shop.jpg" alt="" /></figure>
                         <figure><img src="" alt="" /></figure>
                     </section>
                     { /* 店家簡介 */}
                     <div id="introWrapper">
-                        <div className="shopSticky">
+                        <div className="shopSticky" data-aos="fade-right">
                             <section id="shop-intro">
                                 <div className="top">
                                     <img src="./images/shop-img.png" alt="" />
@@ -55,7 +54,7 @@ export default function Shop() {
                         </div>
 
                         <div id="b-content">
-                            <section id="content-shop">
+                            <section id="content-shop" data-aos="fade-left">
                                 <article id="box-list">
                                     <div className="img">
                                         <figure><img src="./images/shop-img1.png" alt="" /></figure>
@@ -65,17 +64,17 @@ export default function Shop() {
                                 </article>
                             </section>
                             { /* 現有課程 */}
-                            <section id="lesson-shop">
-                                <figure className="title-shop"><img src="./images/lesson.svg" alt="" /></figure>
-                                <div className="class-row">
+                            <section id="lesson-shop" >
+                                <figure className="title-shop" data-aos="fade-right"><img src="./images/lesson.svg" alt="" /></figure>
+                                <div className="class-row" data-aos="fade-up">
                                     <ClassCardLatest/>
                                 </div>
-                                <button className="see-btn"><img className='ball-shop' src="./images/Vector-circle-b.png" alt="" /> <span>See More</span><img className='arr-shop' src="./images/shop-arr.svg" alt="" /></button>
+                                <button className="see-btn"data-aos="fade-left"><img className='ball-shop' src="./images/Vector-circle-b.png" alt="" /> <span>See More</span><img className='arr-shop' src="./images/shop-arr.svg" alt="" /></button>
                             </section>
                             { /* 心得分享 */}
                             <section id="share">
-                                <figure className="title-shop"><img src="/images/share.svg" alt="" /></figure>
-                                <div id="share-img">
+                                <figure className="title-shop" data-aos="fade-right"><img src="/images/share.svg" alt="" /></figure>
+                                <div id="share-img" data-aos="fade-left">
                                     <a href='#' className='share-card'>
                                         <img src="./images/share-1.png" alt="" />
                                         <div className='shareHover'> 
@@ -93,7 +92,7 @@ export default function Shop() {
                                         </div>
                                     </a>
                                 </div>
-                                <div className="share-btn">
+                                <div className="share-btn" data-aos="fade-right">
                                     <Seemore text='See All' imgBall="./images/Vector-circle-b.png" href="https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH" />
                                 </div>
 
