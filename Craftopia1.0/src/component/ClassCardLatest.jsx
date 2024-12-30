@@ -64,7 +64,7 @@ function ClassCardLatest() {
     useEffect(() => {
         AOS.init();
     }, []);
-
+    //seemore功能
     const [visibleMore, setVisibleMore] = useState(4);
     const handleSeeMore = () => {
         setVisibleMore((cardCount) => cardCount + 3);

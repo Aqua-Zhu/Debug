@@ -30,7 +30,7 @@ export default function SeeMoreYuan({ text, imgBall, href }) {
     return (
         
             <a
-                className={`seemore-btn ${animationStage >= 1 ? 'shot' : ''}`}
+                className={`seemore-Btn ${animationStage >= 1 ? 'shot' : ''}`}
                 href={href}
                 onClick={handleClick}
             >

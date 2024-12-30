@@ -6,11 +6,12 @@ import Blob5 from "../assets/blob5.svg";
 import ReserveCardsBox from '../component/ReserveCardsBox';
 import MyShareBox from '../component/MyShareBox';
 import ToTop from '../component/ToTop';
-import ClassCardLatest from '../component/ClassCardLatest';
+
 import { useEffect, useState } from 'react';
 import SeeMoreYuan from '../component/SeeMoreYuan';
 import TopbarB from '../component/TopbarB';
 import AOS from 'aos';
+import ClassCardLatestYuan from '../component/ClassCardLatestYuan';
 
 export default function Member() {
     useEffect(() => {
@@ -140,7 +141,7 @@ export default function Member() {
                     </div>
                     {/* 卡片區 */}
                     <div className="card-area">
-                        <ClassCardLatest />
+                        <ClassCardLatestYuan />
 
                     </div>
 
@@ -153,7 +154,7 @@ export default function Member() {
                 </section>
 
                 {/* 心得區 */}
-                <section id="experience" data-aos='fade-up' data-aos-duration='800'>
+                <section id="member-experience" data-aos='fade-up' data-aos-duration='800'>
                     <div className="expWrapper">
                         <div className="expTitle">
                             <img className='expHeader' src="./images/title/myShare.svg" alt="" />

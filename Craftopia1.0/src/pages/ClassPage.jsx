@@ -359,7 +359,11 @@ function ClassPage() {
             
 
           </div>
-          <MyShareBox />
+          {/* 20241230 加一個wrapper */}
+          <div className="classExpWrapper">
+            <MyShareBox />
+          </div>
+          
         </section>
 
         {/* 相關課程推薦recommend區 */}

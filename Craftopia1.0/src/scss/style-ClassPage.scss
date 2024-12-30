@@ -32,7 +32,8 @@ body {
 
     .sectionClass {
         // border: 1px solid rgb(234, 0, 255);
-        width: 90%;
+        width: 100%;
+        // padding: 0 15%; //20241230
         align-self: center;
     }
 }
@@ -458,14 +459,16 @@ body {
     justify-items: center;
     z-index: 99;
     height: auto;
-    max-width: 1100px;
+    // max-width: 1100px; // 20241230
     margin-bottom: 100px;
-
+    padding: 0 25%; 
     #titleQA {
         width: 205px;
     }
-
-
+    .courseQA{
+        max-width: 1000px;
+    }
+// 20241230
 }
 
 
@@ -602,6 +605,10 @@ body {
     .modalReview-overlay {
         position: fixed;
         z-index: 9998;
+    }
+
+    .classExpWrapper{
+        max-width: 1000px;
     }
 
     /*裝飾線AFTER*/
@@ -1141,7 +1148,6 @@ footer {
     button {
         // border: #BF6152 solid;
         border: none;
-        background-color: transparent;
         // display: inline-flex;
         // align-items: center;
         // text-decoration: none;
