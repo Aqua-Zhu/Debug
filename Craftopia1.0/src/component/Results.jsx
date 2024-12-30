@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Hearttoggle from "./Hearttoggle";
+import { Link } from 'react-router-dom';
 
 function Results({ filteredCourses, resultVisible }) {
 
@@ -175,8 +176,10 @@ function Results({ filteredCourses, resultVisible }) {
 
                         <>
                             <div data-aos="fade-right" data-aos-offset="80" className="allFilter">
-                                <div className={`filter classify ${classifyIsOpen ? "open" : ""}`} >
-                                    <div className="select-header" onClick={() => toggleDropdown("classify")}>
+                                <div className={`filter classify  ${classifyIsOpen ? "open" : ""}   ${selectedFilters.price.length !== 0 ||
+                                    selectedFilters.duration.length !== 0 ||
+                                    selectedFilters.level.length !== 0 ? "active" : ""} `} >
+                                    <div className={`select-header`} onClick={() => toggleDropdown("classify")}>
                                         <div>分類</div>
                                         <img className="arrowDown" src="./images/icons-arrowDownR.svg" alt="" />
                                     </div>
@@ -260,9 +263,9 @@ function Results({ filteredCourses, resultVisible }) {
                                         <div data-aos="fade-up" key={course.id} className="classCard">
 
                                             <figure className="classPhoto">
-                                                <a href="#">
+                                                <Link to='/ClassPage'>
                                                     <p>See More <img src="./images/icons-arrowRightBold.svg" alt="" /></p>
-                                                    <img className="photo" src="./images/classphoto-01.jpg" alt="" />
+                                                    <img className="photo" src={`./images/course/${course.image}`} alt="" />
 
                                                     <div className="tagHotorNew ">
                                                         {course.sales > 20 && (
@@ -273,9 +276,9 @@ function Results({ filteredCourses, resultVisible }) {
                                                         )}
                                                     </div>
 
+                                                </Link>
 
 
-                                                </a>
                                             </figure>
                                             <div className="classTag">
                                                 <p className="classLevel">{course.level}</p>

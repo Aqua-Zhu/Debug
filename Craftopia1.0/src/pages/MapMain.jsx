@@ -89,34 +89,6 @@ function MapMain() {
           <MapSelect handleSearch={handleSearch} />
 
 
-
-          {/* <div className="custom-select-wrapper">
-              <select name="map-location" id="map-location">
-                <option value="">地區</option>
-                <option value="北投區">北投區</option>
-                <option value="士林區">士林區</option>
-                <option value="大同區">大同區</option>
-                <option value="中山區">中山區</option>
-                <option value="松山區">松山區</option>
-                <option value="內湖區">內湖區</option>
-                <option value="萬華區">萬華區</option>
-                <option value="中正區">中正區</option>
-                <option value="大安區">大安區</option>
-                <option value="信義區">信義區</option>
-                <option value="南港區">南港區</option>
-                <option value="文山區">文山區</option>
-              </select>
-            </div>
-
-            <div className="custom-select-wrapper">
-              <select name="map-classType" id="map-classType">
-                <option value="">類型</option>
-                <option value="金工">金工</option>
-                <option value="陶藝">陶藝</option>
-                <option value="皮革">皮革</option>
-              </select>
-            </div> */}
-
         </section>
 
 
@@ -185,13 +157,13 @@ function MapMain() {
           )}
 
 
-          <figure className="decor-clip custom-shake-h  shake-constant">
+         {/*  <figure className="decor-clip custom-shake-h  shake-constant">
             <img src="./images/decor-clip.svg" alt="" />
           </figure>
 
           <figure className="decor-smooth custom-shake-h  shake-constant">
             <img src="./images/decor-smooth.svg" alt="" />
-          </figure>
+          </figure> */}
 
 
         </section>

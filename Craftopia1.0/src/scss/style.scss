@@ -350,7 +350,6 @@
     justify-content: space-between;
     z-index: 999;
 
-
     /*漢堡*/
     .navigation {
         display: flex;
@@ -711,6 +710,7 @@
 
     #tool {
         position: absolute;
+        width: 30%;
         z-index: 888;
         bottom: 350px;
     }
@@ -823,7 +823,7 @@
         }
 
         #tool {
-            width: 50%;
+            // width: 35%;
         }
     }
 
@@ -960,6 +960,7 @@
 }
 
 #choice {
+
     .cho-content {
         display: flex;
         flex-direction: column;
@@ -969,7 +970,6 @@
         display: flex;
         justify-content: center;
         position: relative;
-
         div {
             margin: 20px 0;
             color: $deep;
@@ -1011,7 +1011,7 @@
 
     #cho-3 {
         display: flex;
-        margin: 0 25% 0 10%;
+        margin: 0 20% 0 10%;
         align-items: center;
         position: relative;
         z-index: 998;
@@ -1914,13 +1914,15 @@
 }
 
 
-main {
+body {
     // background-image: url('./images/background-color.png');
-    // background-size: cover;
     background-image: url(./images/BG-texture-400.jpg);
-    // background-size: cover;
     background-repeat: repeat;
-    background-attachment: fixed;
+    letter-spacing: 2px; //zinia
+    overflow-x: hidden;//Yuan-qa
+    font-family: "Noto Sans TC", sans-serif;//Yuan-qa
+    font-weight: 500;//Yuan-qa
+    letter-spacing: 2px;//Yuan-qa
 }
 
 /*頁尾區*/

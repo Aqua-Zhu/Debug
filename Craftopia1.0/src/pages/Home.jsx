@@ -24,6 +24,7 @@ export default function Home(){
                 <div id="body">
                     {/* 頁首區 */}
                     <Topbar bannerId='#banner'/>
+                    
                     {/* 主要內容區 */}
                     <main>
                         {/* banner*/}
@@ -69,7 +70,7 @@ export default function Home(){
                                 </div>
                                 {/* 裝飾物件 */}
                                 <figure id="line-1"><img src="./images/line-1.png" alt="" /></figure>
-                                <figure id="tool"><img src="./images/compass.png" alt="" /></figure>
+                                <figure id="tool"><img src="./images/compass.svg" alt="" /></figure>
                                 <figure id="title-2" data-aos="fade-up"><img src="./images/title-choice-lesson.png" alt="" /></figure>
                                 <figure className="blob-5"><img src="./images/blob-home5.svg" alt="" /></figure>
                                 <figure className="blob-6"><img src="./images/blob-6.svg" alt="" /></figure>
@@ -93,7 +94,8 @@ export default function Home(){
                                         <li>課程中可學習陶藝基本技法，以引導的方式讓兩人共同創作，若有任何製作上的需求，可以在課程中與老師討論。</li>
                                         <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li>
                                         {/* <a href=""><span>see more</span> </a> */}
-                                        <Seemore text={'see more'} imgBall={"./images/Vector-circle-y.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} />
+                                        {/* <Seemore text={'see more'} imgBall={"./images/Vector-circle-y.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /> */}
+                                        <Seemore text={'see more'} imgBall={"./images/Vector-circle-y.png"} href={"./Search"} />
                                     </div>
                                 </article>
                                 <article id="cho-2" data-aos="fade-left">
@@ -102,7 +104,7 @@ export default function Home(){
                                         <h2>聖誕節前夕來場約會!!<br />『 TAO TAO 工作室』雙人陶藝體驗課</h2>
                                         <li>課程中可學習陶藝基本技法，以引導的方式讓兩人共同創作，若有任何製作上的需求，可以在課程中與老師討論。</li>
                                         <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li>
-                                        <Seemore text={'see more'} imgBall={"./images/Vector-circle-db.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} />
+                                        <Seemore text={'see more'} imgBall={"./images/Vector-circle-db.png"}/>
                                     </div>
                                 </article>
     
@@ -113,7 +115,10 @@ export default function Home(){
                                     <h2>聖誕節前夕來場約會!!<br />『 TAO TAO 工作室』雙人陶藝體驗課</h2>
                                     <li>課程中可學習陶藝基本技法，以引導的方式讓兩人共同創作，若有任何製作上的需求，可以在課程中與老師討論。</li>
                                     <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li>
-                                    <Seemore text={'see more'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} />
+                                    {/* <Seemore text={'see more'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /> */}
+                                    <Seemore text={'see more'} imgBall={"./images/Vector-circle-b.png"}/>
+                                    
+
                                 </div>
                             </article>
                             {/* 裝飾物件 */}
@@ -164,6 +169,7 @@ export default function Home(){
                             <figure id="tool-4"><img src="./images/cSeat.png" alt="" /></figure>
                             <figure className="line-3"><img src="./images/line-3.png" alt="" /></figure>
                             <p className="Info-btn" href="" data-aos="fade-left"><Seemore text={'All Info'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /></p>
+
                         </section>
                         {/* 關於我們 */}
                         {/* <figure id="us-bg"><img src="./images/aboutus-bg.png" alt="" /></figure> */}
@@ -222,8 +228,8 @@ export default function Home(){
                                     </strong>
                                     </p>
                                     <div className="last-btn" data-aos="fade-left">
-                                        <button>挖掘店家<img src="./images/arrow.right.png" alt="" /></button>
-                                        <button>搜尋課程<img src="./images/arrow.right.png" alt="" /></button>
+                                        <Link to='/mapmain'><button>挖掘店家<img src="./images/arrow.right.png" alt="" /></button></Link>
+                                        <Link to='/search'><button>搜尋課程<img src="./images/arrow.right.png" alt="" /></button></Link>
                                     </div>
                                 </div>
                             </section>

@@ -4,8 +4,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'csshake/dist/csshake.min.css';
 import Hearttoggle from "./Hearttoggle";
-import ClassCardLatest from "./ClassCardLatest";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -14,8 +14,9 @@ import { Link } from "react-router-dom";
 function ClassList() {
 
 
+
     /* 篩選出熱門課程 */
-    const hotCourse = courseData.filter((course) => course.sales > 20 );
+    const hotCourse = courseData.filter((course) => course.sales > 20);
 
 
 
@@ -62,7 +63,8 @@ function ClassList() {
 
     return (
         <>
-            
+
+
             {/* 熱門推薦課程 */}
             <section id="hotRecommend" className="courseSection" data-aos="fade-up" data-aos-offset="100" >
 
@@ -73,8 +75,8 @@ function ClassList() {
                 <div className="classList">
 
 
-                {/* <ClassCardLatest/> */}
-                
+
+
                     {hotCourse.slice(0, visibleHotCount).map((course) => {
 
 
@@ -83,21 +85,26 @@ function ClassList() {
 
                         return (
 
-                                
+
                             <div data-aos="fade-up" data-aos-offset="50" key={course.id} className={`classCard`}>
 
                                 <figure className="classPhoto">
-                                    <Link to='/classpage'>
+                                    <Link to='/ClassPage'>
 
                                         <p>See More <img src="./images/icons-arrowRightBold.svg" alt="" /></p>
-                                        <img className="photo" src="./images/classphoto-01.jpg" alt="" />
+                                        <img className="photo" src={`./images/course/${course.image}`} alt="" />
 
                                         <div className="tagHotorNew ">
-                                            {course.hot && (
+                                            {course.sales > 20 && (
+
                                                 <img src="./images/labels-hot.svg" alt="" />
+
                                             )}
                                             {newest && (
+
+
                                                 <img src="./images/labels-new.svg" alt="" />
+
                                             )}
                                         </div>
 
@@ -136,18 +143,25 @@ function ClassList() {
                         </p>
                     </div>
 
+
+
+
+
+
+
+
                 )}
 
 
 
-                
+
 
 
             </section>
 
 
-            
-                
+
+
 
 
             {/* 最新上架課程 */}
@@ -168,12 +182,17 @@ function ClassList() {
                                 <figure className="classPhoto">
                                     <a href="#">
                                         <p>See More <img src="./images/icons-arrowRightBold.svg" alt="" /></p>
-                                        <img className="photo" src="./images/classphoto-01.jpg" alt="" />
+                                        <img className="photo" src={`./images/course/${course.image}`} alt="" />
                                         <div className="tagHotorNew">
-                                            {course.hot && (
+                                            {course.sales > 20 && (
                                                 <img src="./images/labels-hot.svg" alt="" />
                                             )}
+
+
+
                                             <img src="./images/labels-new.svg" alt="" />
+
+
                                         </div>
 
 

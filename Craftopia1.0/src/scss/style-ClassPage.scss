@@ -7,12 +7,6 @@
     color: red;
 }
 
-/*底圖區*/
-body {
-    background-image: url('../images/BG-texture-400.jpg');
-    background-repeat: repeat;
-    letter-spacing: 2px;
-}
 
 /*共用區*/
 .titlePic {
@@ -625,26 +619,13 @@ body {
         bottom: -150px;
         z-index: -10;
     }
-    // .expTop{
-    //     figure{
-    //         .titlePic{
-    //             width: 70%;
-    //         }
-    //     }
-    //     .seemore-btn{
-    //         margin: 0;
-    //         // padding-left: 0;
-    //     }
-    //     flex-direction: column;
-    // }
 
     .expTop {
         display: flex;
         align-items: flex-end;
-
-        // .seemore-btn {
-
-        // }
+        .seemore-btn {
+            background-color: transparent;
+        }
     }
 
 

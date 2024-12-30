@@ -10,7 +10,7 @@ body {
     font-family: "Noto Sans TC", sans-serif;
     font-weight: 500;
     letter-spacing: 2px;
-    background-image: url(./images/BG-texture-400.jpg);
+    // background-image: url(./images/BG-texture-400.jpg);
 }
 
 #memberArea {
@@ -54,7 +54,6 @@ body {
         align-items: center;
         position: relative;
         font-weight: bold;
-
         .font {
             z-index: 10;
         }
@@ -1025,6 +1024,7 @@ body {
                     display: -webkit-box;
                     -webkit-box-orient: vertical;
                     -webkit-line-clamp: 4;
+                    line-clamp: 4;
                     overflow: hidden;
                     margin-top: 24px;
 
@@ -1037,7 +1037,7 @@ body {
 
 /* 心得-平板 */
 @media ($mediaMd) {
-    #memberArea>#experience {
+    #memberArea>#member-experience {
         padding: 5% 8%;
 
         .expWrapper .newestExp .Exp {
@@ -1052,6 +1052,7 @@ body {
 
                 .expTxt {
                     -webkit-line-clamp: 3;
+                    line-clamp: 3;
                 }
             }
         }
@@ -1060,7 +1061,7 @@ body {
 
 /* 心得-手機 */
 @media ($mediaSm) {
-    #memberArea>#experience {
+    #memberArea>#member-experience {
         margin-bottom: 0;
 
         .expWrapper {
@@ -1108,7 +1109,7 @@ body {
 
 /* 泡泡區 */
 .bg-blob {
-    z-index: 1;
+    z-index: -2;
 
     .infoBlob1 {
         position: absolute;

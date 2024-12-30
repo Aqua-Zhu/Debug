@@ -27,6 +27,7 @@ export default function SeeMoreYuan({ text, imgBall, href }) {
         }, 1000);
     };
 
+    
     return (
         
             <a

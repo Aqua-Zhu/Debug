@@ -5,14 +5,6 @@
 
 
 
-/* 全網站背景材質設定區 */
-body {
-    color: #303030;
-    // background-image: url(./images/BG-texture-400.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 
 
 /* 課程搜尋區塊 */
@@ -124,6 +116,7 @@ body {
             border: 1px solid #ADADAD;
             padding: 12px;
             border-radius: 6px;
+            letter-spacing: 1px;
             cursor: pointer;
 
         }
@@ -226,10 +219,6 @@ body {
         .people {
             width: 32%;
 
-            .select-header {
-                color: #222222;
-
-            }
 
             .number-option {
 
@@ -305,7 +294,6 @@ body {
 
 
 }
-
 @media ($mediaMd) {
 
     #SearchBanner {
@@ -780,6 +768,7 @@ body {
 .classList {
 
     width: 80%;
+    max-width: 1152px;
     margin-bottom: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -924,7 +913,7 @@ body {
         .classStoreName {
             color: #5a5a5a;
             font-size: 16px;
-            width:  130px;
+            width:  140px;
              
             
             @extend %line-multiple;
@@ -1037,7 +1026,8 @@ body {
 
 
 /* seemore 按鈕 */
-.seemore-btn {
+.seeMore {
+    
     font-family: "Braah One", serif;
     display: inline-flex;
     align-items: center;
@@ -1048,6 +1038,8 @@ body {
     position: relative;
     font-weight: bold;
     cursor: pointer;
+
+    
 
     .arr {
         margin-left: 65px;
