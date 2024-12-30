@@ -1918,7 +1918,8 @@ main {
     // background-image: url('./images/background-color.png');
     // background-size: cover;
     background-image: url(./images/BG-texture-400.jpg);
-    background-size: cover;
+    // background-size: cover;
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 

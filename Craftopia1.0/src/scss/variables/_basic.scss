@@ -54,10 +54,10 @@ $font-weight-bold:700;
 
 // qa左邊icon
 @mixin aniShake {
-    animation: shake .8s;
+    animation: shake2 .8s;
     animation-iteration-count: infinite;
 
-    @keyframes shake {
+    @keyframes shake2 {
         0% {
             transform: rotate(0deg);
         }
@@ -79,10 +79,10 @@ $font-weight-bold:700;
 
 // 會員編輯按鈕
 @mixin aniPen {
-    animation: pen .8s;
+    animation: pen1 .8s;
 
 
-    @keyframes pen {
+    @keyframes pen1 {
         0% {
             transform: rotate(0deg);
         }

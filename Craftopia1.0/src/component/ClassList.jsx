@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import 'csshake/dist/csshake.min.css';
 import Hearttoggle from "./Hearttoggle";
 import ClassCardLatest from "./ClassCardLatest";
+import { Link } from "react-router-dom";
 
 
 
@@ -86,7 +87,7 @@ function ClassList() {
                             <div data-aos="fade-up" data-aos-offset="50" key={course.id} className={`classCard`}>
 
                                 <figure className="classPhoto">
-                                    <a href="#">
+                                    <Link to='/classpage'>
 
                                         <p>See More <img src="./images/icons-arrowRightBold.svg" alt="" /></p>
                                         <img className="photo" src="./images/classphoto-01.jpg" alt="" />
@@ -100,7 +101,7 @@ function ClassList() {
                                             )}
                                         </div>
 
-                                    </a>
+                                    </Link>
                                 </figure>
                                 <div className="classTag">
                                     <p className="classLevel">{course.level}</p>
@@ -135,12 +136,6 @@ function ClassList() {
                         </p>
                     </div>
 
-
-
-
-
-
-
                 )}
 
 
@@ -153,7 +148,7 @@ function ClassList() {
 
             
                 
-               
+
 
             {/* 最新上架課程 */}
             <section id="newestClass" className="courseSection" data-aos="fade-up">

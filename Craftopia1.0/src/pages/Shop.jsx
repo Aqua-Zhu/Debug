@@ -1,7 +1,7 @@
 import '../scss/style-shop.scss'
 import Topbar from "../component/Topbar";
 import Seemore from '../component/Seemore';
-import { useEffect} from 'react';
+import { useEffect } from 'react';
 import ToTop from '../component/ToTop';
 import ClassCardLatest from '../component/ClassCardLatest';
 import AOS from 'aos';
@@ -70,7 +70,7 @@ export default function Shop() {
                                 <div className="class-row" data-aos="fade-up">
                                     <ClassCardLatest/>
                                 </div>
-                                <button className="see-btn"data-aos="fade-left"><img className='ball-shop' src="./images/Vector-circle-b.png" alt="" /> <span>See More</span><img className='arr-shop' src="./images/shop-arr.svg" alt="" /></button>
+                                {/* <button className="see-btn"data-aos="fade-left"/><img className='ball-shop' src="./images/Vector-circle-b.png" alt="" /> <span>See More</span><img className='arr-shop' src="./images/shop-arr.svg" alt="" /></button> */}
                             </section>
                             { /* 心得分享 */}
                             <section id="share">

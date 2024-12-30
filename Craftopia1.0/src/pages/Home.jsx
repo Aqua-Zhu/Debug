@@ -135,7 +135,7 @@ export default function Home(){
                                         </figure>
                                 </header>
                                 <article data-aos="fade-up">
-                                    <div className="act" data-aos="fade-left">
+                                    <div className="act" data-aos="zoom-in-left">
                                         <img src="./images/act-1.png" alt="" />
                                         <div className="act-content">
                                             <p>2024 年 10 月 13 日</p>
@@ -146,7 +146,7 @@ export default function Home(){
                                         </div>
                                     </div>
                                     <figure id="act-line"><img src="./images/act-line.png" alt="" /></figure>
-                                    <div className="act" data-aos="fade-left">
+                                    <div className="act" data-aos="zoom-in-left">
                                         <img src="./images/act-2.png" alt="" />
                                         <div className="act-content">
                                             <p>2024 年 10 月 13 日</p>
@@ -168,7 +168,7 @@ export default function Home(){
                         {/* 關於我們 */}
                         {/* <figure id="us-bg"><img src="./images/aboutus-bg.png" alt="" /></figure> */}
                         <div id="feature-all">
-                            <section id="about" data-aos="fade-up">
+                            <section id="about" data-aos="flip-up">
                                 <header>
                                     <figure className="title"><img src="./images/title-aboutus.png" alt="" /></figure>
                                 </header>
@@ -196,7 +196,7 @@ export default function Home(){
                                 <header>
                                     <figure className="title"><img src="./images/title-feature.png" alt="" /></figure>
                                 </header>
-                                <div className="feat-content" data-aos="fade-up">
+                                <div className="feat-content" data-aos="zoom-out">
                                     {/* 圓圈跟線段分開-動畫 */}
                                     <article className="feat1 pointblob">
                                         <img src="./images/feature1-svg.png" alt="" />
