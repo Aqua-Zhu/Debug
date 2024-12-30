@@ -823,7 +823,7 @@
         }
 
         #tool {
-            // width: 35%;
+            width: 35%;
         }
     }
 
@@ -920,6 +920,9 @@
                 }
             }
         }
+        #tool {
+            bottom: 750px;
+        }
     }
 
 
@@ -959,38 +962,305 @@
     }
 }
 
-#choice {
+// #choice {
 
+//     .cho-content {
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     .arr1 {
+//         display: flex;
+//         justify-content: center;
+//         position: relative;
+//         div {
+//             margin: 20px 0;
+//             color: $deep;
+
+//             h2 {
+//                 font-size: $font-size-xxxl;
+//                 font-weight: bold;
+//                 line-height: 3rem;
+//             }
+
+//             li {
+//                 line-height: 1.8rem;
+//             }
+
+//         }
+
+//         #cho-1 {
+//             margin: 0 10% 180px;
+//             transition: .3s;
+//             position: relative;
+//             z-index: 995;
+
+//             &:hover {
+//                 transform: scale(1.1);
+//                 transition: .3s;
+//             }
+//         }
+
+//         #cho-2 {
+//             margin: 130px 10% 0;
+//             transition: .3s;
+
+//             &:hover {
+//                 transform: scale(1.1);
+//                 transition: .3s;
+//             }
+//         }
+//     }
+
+//     #cho-3 {
+//         display: flex;
+//         margin: 0 20% 0 10%;
+//         align-items: center;
+//         position: relative;
+//         z-index: 998;
+//         transition: .3s;
+
+//         &:hover {
+//             transform: scale(1.1);
+//             transition: .3s;
+//         }
+
+//         // img {
+//         //     width: 65%;
+//         // }
+
+//         div {
+//             color: $deep;
+//             margin-left: 10%;
+
+
+//             h2 {
+//                 font-size: $font-size-xxxl;
+//                 font-weight: bold;
+//                 line-height: 3rem;
+//             }
+
+//             li {
+//                 line-height: 1.8rem;
+//             }
+//         }
+//     }
+
+//     header {
+//         justify-self: center;
+//     }
+
+//     position: relative;
+
+//     /*裝飾區*/
+//     .blob-9 {
+//         position: absolute;
+//         width: 550px;
+//         left: -120px;
+//         top: -150px;
+//         z-index: 888;
+//     }
+
+//     .blob-10 {
+//         position: absolute;
+//         width: 900px;
+//         left: -200px;
+//         bottom: -200px;
+//         z-index: 888;
+//     }
+
+//     .blob-11 {
+//         position: absolute;
+//         width: 450px;
+//         left: -300px;
+//         bottom: -600px;
+//         z-index: 888;
+//     }
+
+    // #tool-2 {
+    //     position: absolute;
+    //     right: 0px;
+    //     top: -350px;
+    // }
+
+    // #tool-3 {
+    //     position: absolute;
+    //     right: 0;
+    //     bottom: 18%;
+    // }
+
+//     #line-2 {
+//         margin-bottom: 200px;
+//     }
+
+//     @media ($mediaMdDown) {
+//         .arr1 {
+//             flex-direction: column;
+//             margin: 50px 10%;
+
+//             a {
+//                 margin-top: 20px;
+//             }
+
+//             #cho-1 {
+//                 margin-bottom: 0;
+//             }
+
+//             #cho-2 {
+//                 margin-top: 0;
+//             }
+//         }
+
+//         #cho-3 {
+//             margin: 50px 18%;
+//             flex-direction: column;
+
+//             a {
+//                 margin-top: 20px;
+//             }
+
+//             img {
+//                 width: 100%;
+//             }
+
+//             .cho-content {
+//                 margin: 20px 0;
+//             }
+//         }
+
+//     }
+
+//     @media ($mediaSm) {
+//         .arr1 {
+
+//             #cho-1,
+//             #cho-2 {
+
+//                 h2 {
+//                     font-size: $font-size-l;
+//                     line-height: $font-size-xxxl;
+//                 }
+
+//                 li {
+//                     font-size: $font-size-m;
+//                 }
+
+//                 a {
+//                     margin-left: 70%;
+//                     width: 25%;
+
+//                     span {
+//                         margin-left: 5px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         #cho-3 {
+//             .cho-content {
+//                 h2 {
+//                     font-size: $font-size-l;
+//                     line-height: $font-size-xxxl;
+//                 }
+
+//                 li {
+//                     font-size: $font-size-m;
+//                 }
+
+//                 a {
+//                     margin-left: 70%;
+//                     width: 25%;
+
+//                     .ball {
+//                         width: 50%;
+//                     }
+
+//                     span {
+//                         margin-left: 5px;
+//                         margin-bottom: 4px;
+//                     }
+//                 }
+//             }
+
+//         }
+
+//         #tool-2 {
+//             width: 50%;
+//         }
+
+//         #tool-3 {
+//             width: 40%;
+//         }
+
+//         #line-2 {
+//             margin-bottom: 100px;
+//         }
+//     }
+// }
+#choice {
     .cho-content {
         display: flex;
         flex-direction: column;
     }
 
+
     .arr1 {
         display: flex;
         justify-content: center;
         position: relative;
-        div {
+
+
+        ul {
             margin: 20px 0;
             color: $deep;
+            list-style-type: disc;
+            list-style-position: outside;
+
 
             h2 {
-                font-size: $font-size-xxxl;
+                font-size: 1.5rem;
                 font-weight: bold;
-                line-height: 3rem;
+                line-height: 2.2rem;
+                margin-bottom: 1rem;
             }
+
 
             li {
                 line-height: 1.8rem;
+                margin-left: 1rem;
             }
-
         }
 
+
+        /* 忞-調整 */
         #cho-1 {
-            margin: 0 10% 180px;
+            margin: 0 5% 180px 16%;
             transition: .3s;
             position: relative;
             z-index: 995;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            .indexHotPic1 {
+                position: relative;
+                width: 350px;
+
+
+                &::after {
+                    content: "金工";
+                    font-weight: 700;
+                    padding: 5px 15px;
+                    border-radius: 99px;
+                    background-color: #ECD8A3;
+                    border: 2px solid #fff;
+                    bottom: 50px;
+                    right: -20px;
+                    position: absolute;
+                }
+            }
+
 
             &:hover {
                 transform: scale(1.1);
@@ -998,9 +1268,34 @@
             }
         }
 
+
         #cho-2 {
-            margin: 130px 10% 0;
+            margin: 130px 15% 0 10%;
             transition: .3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            .indexHotPic2 {
+                width: 350px;
+                position: relative;
+
+
+                &::after {
+                    content: "陶藝";
+                    font-weight: 700;
+                    padding: 5px 15px;
+                    border-radius: 99px;
+                    background-color: #483D3F;
+                    color: #fff;
+                    border: 2px solid #fff;
+                    bottom: 50px;
+                    left: -30px;
+                    position: absolute;
+                }
+            }
+
 
             &:hover {
                 transform: scale(1.1);
@@ -1009,45 +1304,86 @@
         }
     }
 
+
     #cho-3 {
+        .indexHotPic3 {
+            width: 400px;
+            position: relative;
+
+
+            &::after {
+                content: "皮革";
+                font-weight: 700;
+                padding: 5px 15px;
+                border-radius: 99px;
+                background-color: #9F5B44;
+                color: #fff;
+                border: 2px solid #fff;
+                top: 150px;
+                right: -30px;
+                position: absolute;
+            }
+        }
+
+
         display: flex;
-        margin: 0 20% 0 10%;
+        margin: 5% 16% 0;
+        min-width: 900px;
         align-items: center;
+        justify-content: center;
         position: relative;
         z-index: 998;
         transition: .3s;
+
+
+
 
         &:hover {
             transform: scale(1.1);
             transition: .3s;
         }
 
-        img {
-            width: 65%;
-        }
 
-        div {
+        .indexHotCon3 {
             color: $deep;
-            margin-left: 10%;
+            flex: 1;
+            padding: 0 8%;
+            display: flex;
+            flex-direction: column;
 
 
-            h2 {
-                font-size: $font-size-xxxl;
-                font-weight: bold;
-                line-height: 3rem;
-            }
 
-            li {
-                line-height: 1.8rem;
+
+            .indexHotCon3-text {
+                margin: 16px 0;
+                list-style-type: disc;
+                list-style-position: outside;
+
+
+                h2 {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    line-height: 2.2rem;
+                    margin-bottom: 1rem;
+                }
+
+
+                li {
+                    line-height: 1.8rem;
+                    margin-left: 1rem;
+                }
             }
         }
     }
+
 
     header {
         justify-self: center;
     }
 
+
     position: relative;
+
 
     /*裝飾區*/
     .blob-9 {
@@ -1058,6 +1394,7 @@
         z-index: 888;
     }
 
+
     .blob-10 {
         position: absolute;
         width: 900px;
@@ -1065,6 +1402,7 @@
         bottom: -200px;
         z-index: 888;
     }
+
 
     .blob-11 {
         position: absolute;
@@ -1074,11 +1412,13 @@
         z-index: 888;
     }
 
+
     #tool-2 {
         position: absolute;
         right: 0px;
         top: -350px;
     }
+
 
     #tool-3 {
         position: absolute;
@@ -1086,114 +1426,78 @@
         bottom: 18%;
     }
 
+
     #line-2 {
         margin-bottom: 200px;
     }
+}
 
-    @media ($mediaMdDown) {
+
+@media ($mediaMdDown) {
+    #choice {
         .arr1 {
             flex-direction: column;
-            margin: 50px 10%;
 
-            a {
-                margin-top: 20px;
-            }
-
-            #cho-1 {
-                margin-bottom: 0;
-            }
-
-            #cho-2 {
-                margin-top: 0;
-            }
-        }
-
-        #cho-3 {
-            margin: 50px 18%;
-            flex-direction: column;
-
-            a {
-                margin-top: 20px;
-            }
-
-            img {
-                width: 100%;
-            }
-
-            .cho-content {
-                margin: 20px 0;
-            }
-        }
-
-    }
-
-    @media ($mediaSm) {
-        .arr1 {
 
             #cho-1,
             #cho-2 {
-
-                h2 {
-                    font-size: $font-size-l;
-                    line-height: $font-size-xxxl;
-                }
-
-                li {
-                    font-size: $font-size-m;
-                }
-
-                a {
-                    margin-left: 70%;
-                    width: 25%;
-
-                    span {
-                        margin-left: 5px;
-                    }
-                }
+                width: 80%;
+                margin: 5% auto;
             }
         }
+
 
         #cho-3 {
-            .cho-content {
-                h2 {
-                    font-size: $font-size-l;
-                    line-height: $font-size-xxxl;
-                }
+            width: 100%;
+            min-width: unset;
+            flex-direction: column;
+            margin: 5% auto;
+            padding: 0 10%;
 
-                li {
-                    font-size: $font-size-m;
-                }
 
-                a {
-                    margin-left: 70%;
-                    width: 25%;
-
-                    .ball {
-                        width: 50%;
-                    }
-
-                    span {
-                        margin-left: 5px;
-                        margin-bottom: 4px;
-                    }
-                }
+            .indexHotCon3 {
+                padding: 0;
             }
-
-        }
-
-        #tool-2 {
-            width: 50%;
-        }
-
-        #tool-3 {
-            width: 40%;
-        }
-
-        #line-2 {
-            margin-bottom: 100px;
         }
     }
 }
+@media ($mediaSm) {
+    #choice{
+        .arr1{
+            #cho-1{
+                width: 70%;
+                .indexHotPic1{
+                    width: 100%;
+                }
+            }
+            #cho-2{
+                width: 70%;
+                .indexHotPic2{
+                    width: 100%;
+                }
+            }
+        }
+
+        #cho-3{
+            
+            width: calc(86% * 0.8) ;
+            padding: 0;
+            .indexHotPic3{
+                width: 100%;
+                margin: 0;
+            }
+        }
+        #tool-2{
+            width: 60%;
+            // top: -200px;
+        }
+        #tool-3{
+            width: 40%;
+            bottom: -8%;
+        }
+    }
+}
+
 
 /*活動資訊*/
 #activity {

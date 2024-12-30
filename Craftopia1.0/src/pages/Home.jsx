@@ -44,7 +44,7 @@ export default function Home(){
                                         <img src="./images/title-lesson.png" alt="" />
                                     </figure>
                                 </header>
-                                <div className="wrapper" data-aos="fade-left">
+                                <div className="wrapper" data-aos="fade-up">
                                     <a href="https://www.google.com/?authuser=0" className="card contain1">
                                         <h3 className="title-class">皮<br />革</h3>
                                         <h3 className="flex pt1">皮革</h3>
@@ -83,44 +83,69 @@ export default function Home(){
                         <header>
                             {/* 預留給標題 */}
                             {/* <a className="btn-classes" href=""><span>All class</span></a> */}
-                            <p className="btn-classes" data-aos="fade-right"><Seemore text={'All class'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /></p>
+                            <p className="btn-classes" data-aos="fade-up"><Seemore text={'All class'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /></p>
                         </header>
                         <section id="choice">
-                            <div className="arr1">
-                                <article id="cho-1" data-aos="fade-right">
-                                    <img src="./images/cho-1.png" alt="" />
-                                    <div className="cho-content">
-                                        <h2>聖誕節前夕來場約會!!<br />『 TAO TAO 工作室』雙人陶藝體驗課</h2>
-                                        <li>課程中可學習陶藝基本技法，以引導的方式讓兩人共同創作，若有任何製作上的需求，可以在課程中與老師討論。</li>
-                                        <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li>
-                                        {/* <a href=""><span>see more</span> </a> */}
-                                        {/* <Seemore text={'see more'} imgBall={"./images/Vector-circle-y.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /> */}
-                                        <Seemore text={'see more'} imgBall={"./images/Vector-circle-y.png"} href={"./Search"} />
-                                    </div>
-                                </article>
-                                <article id="cho-2" data-aos="fade-left">
-                                    <img src="./images/cho-2.png" alt="" />
-                                    <div className="cho-content">
-                                        <h2>聖誕節前夕來場約會!!<br />『 TAO TAO 工作室』雙人陶藝體驗課</h2>
-                                        <li>課程中可學習陶藝基本技法，以引導的方式讓兩人共同創作，若有任何製作上的需求，可以在課程中與老師討論。</li>
-                                        <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li>
-                                        <Seemore text={'see more'} imgBall={"./images/Vector-circle-db.png"}/>
-                                    </div>
-                                </article>
-    
+                        <div className="arr1">
+                            <article id="cho-1" data-aos="fade-up">
+                                <div className="indexHotPic1">
+                                    <img src="./images/indexHot-1.svg" alt="" />
+                                </div>
+
+
+                                <ul className="cho-content">
+                                    <h2>聖誕節前夕來場約會!!<br />『 TAO TAO 工作室』雙人陶藝體驗課</h2>
+                                    <li>課程中可學習陶藝基本技法，以引導的方式讓兩人共同創作，若有任何製作上的需求，可以在課程中與老師討論。</li>
+                                    <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li>
+                                </ul>
+                                {/* <a href=""><span>see more</span> </a> */}
+                                <Seemore text={'see more'} imgBall={"./images/Vector-circle-y.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} />
+
+                            </article>
+                            <article id="cho-2" data-aos="fade-up">
+                                <div className="indexHotPic2">
+                                    <img src="./images/indexHot-2.svg" alt="" />
+                                </div>
+                                <ul className="cho-content">
+                                    <h2>聖誕節前夕來場約會!!<br />『 TAO TAO 工作室』雙人陶藝體驗課</h2>
+                                    <li>課程中可學習陶藝基本技法，以引導的方式讓兩人共同創作，若有任何製作上的需求，可以在課程中與老師討論。</li>
+                                    <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li>
+                                </ul>
+                                <Seemore text={'see more'} imgBall={"./images/Vector-circle-db.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} />
+                            </article>
+
+
+                        </div>
+                        <article id="cho-3" data-aos="fade-up">
+                            <div className="indexHotPic3">
+                                <img src="./images/indexHot-3.svg" alt="" />
                             </div>
-                            <article id="cho-3" data-aos="fade-up">
+                            <div className=" indexHotCon3">
+                                <ul className="indexHotCon3-text">
+                                    <h2>聖誕節前夕來場約會!!<br />『 TAO TAO 工作室』雙人陶藝體驗課</h2>
+                                    <li>課程中可學習陶藝基本技法，以引導的方式讓兩人共同創作，若有任何製作上的需求，可以在課程中與老師討論。</li>
+                                    <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li>
+                                </ul>
+
+
+                                <Seemore text={'see more'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} />
+                            </div>
+
+
+                        </article>
+
+                            {/* <article id="cho-3" data-aos="fade-up">
                                 <img src="./images/cho-3.png" alt="" />
                                 <div className="cho-content">
                                     <h2>聖誕節前夕來場約會!!<br />『 TAO TAO 工作室』雙人陶藝體驗課</h2>
                                     <li>課程中可學習陶藝基本技法，以引導的方式讓兩人共同創作，若有任何製作上的需求，可以在課程中與老師討論。</li>
-                                    <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li>
+                                    <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li> */}
                                     {/* <Seemore text={'see more'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /> */}
-                                    <Seemore text={'see more'} imgBall={"./images/Vector-circle-b.png"}/>
+                                    {/* <Seemore text={'see more'} imgBall={"./images/Vector-circle-b.png"}/> */}
                                     
 
-                                </div>
-                            </article>
+                                {/* </div>
+                            </article> */}
                             {/* 裝飾物件 */}
                             <figure id="tool-2"><img src="./images/jewelrySaw.png" alt="" /></figure>
                             <figure id="tool-3"><img src="./images/woodStick.png" alt="" /></figure>
@@ -134,13 +159,13 @@ export default function Home(){
                         <section id="activity">
                             <div id="act-bg">
                                 <header>
-                                    <figure className="title" data-aos="fade-right">
+                                    <figure className="title" data-aos="fade-up">
                                         <img className="actTitle-str" src="./images/title-activity.png" alt="" />
                                         <img className="actTitle-row" src="./images/title-activity-row.svg" alt="" />
                                         </figure>
                                 </header>
                                 <article data-aos="fade-up">
-                                    <div className="act" data-aos="zoom-in-left">
+                                    <div className="act" data-aos="fade-up">
                                         <img src="./images/act-1.png" alt="" />
                                         <div className="act-content">
                                             <p>2024 年 10 月 13 日</p>
@@ -151,7 +176,7 @@ export default function Home(){
                                         </div>
                                     </div>
                                     <figure id="act-line"><img src="./images/act-line.png" alt="" /></figure>
-                                    <div className="act" data-aos="zoom-in-left">
+                                    <div className="act" data-aos="fade-up">
                                         <img src="./images/act-2.png" alt="" />
                                         <div className="act-content">
                                             <p>2024 年 10 月 13 日</p>
@@ -168,7 +193,7 @@ export default function Home(){
                             <figure className="blob-14"><img src="./images/blob-14.svg" alt="" /></figure>
                             <figure id="tool-4"><img src="./images/cSeat.png" alt="" /></figure>
                             <figure className="line-3"><img src="./images/line-3.png" alt="" /></figure>
-                            <p className="Info-btn" href="" data-aos="fade-left"><Seemore text={'All Info'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /></p>
+                            <p className="Info-btn" href="" data-aos="fade-up"><Seemore text={'All Info'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /></p>
 
                         </section>
                         {/* 關於我們 */}
@@ -202,7 +227,7 @@ export default function Home(){
                                 <header>
                                     <figure className="title"><img src="./images/title-feature.png" alt="" /></figure>
                                 </header>
-                                <div className="feat-content" data-aos="zoom-out">
+                                <div className="feat-content" data-aos="fade-up">
                                     {/* 圓圈跟線段分開-動畫 */}
                                     <article className="feat1 pointblob">
                                         <img src="./images/feature1-svg.png" alt="" />
@@ -221,13 +246,13 @@ export default function Home(){
                                     </article>
                                 </div>
                                 <div className="last" >
-                                    <p data-aos="fade-right"><strong>
+                                    <p data-aos="fade-up"><strong>
                                         Find<br />
                                         Your Own<br />
                                         Craftopia !<br />
                                     </strong>
                                     </p>
-                                    <div className="last-btn" data-aos="fade-left">
+                                    <div className="last-btn" data-aos="fade-up">
                                         <Link to='/mapmain'><button>挖掘店家<img src="./images/arrow.right.png" alt="" /></button></Link>
                                         <Link to='/search'><button>搜尋課程<img src="./images/arrow.right.png" alt="" /></button></Link>
                                     </div>
