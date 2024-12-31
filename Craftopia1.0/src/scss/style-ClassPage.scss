@@ -16,6 +16,10 @@
 .sectionClass {
     margin-bottom: 40px;
 }
+/* 鎖定滾動 */
+.lock-scroll {
+    overflow: hidden;
+}
 
 /*大區塊置中*/
 #mainClass {
@@ -1273,27 +1277,27 @@ footer {
 }
 
 /* totop按鈕 */
-.toTop {
-    z-index: 9988;
+// .toTop {
+//     z-index: 9988;
 
-    .toTop-btn {
-        border: none;
-        background: none;
-        cursor: pointer;
+//     .toTop-btn {
+//         border: none;
+//         background: none;
+//         cursor: pointer;
 
 
-        #toTopHover {
-            display: none;
-        }
+//         #toTopHover {
+//             display: none;
+//         }
 
-        &:hover {
-            >#toTop {
-                display: none;
-            }
+//         &:hover {
+//             >#toTop {
+//                 display: none;
+//             }
 
-            #toTopHover {
-                display: block;
-            }
-        }
-    }
-}
+//             #toTopHover {
+//                 display: block;
+//             }
+//         }
+//     }
+// }

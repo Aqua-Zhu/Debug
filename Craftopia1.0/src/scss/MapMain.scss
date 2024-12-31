@@ -950,33 +950,33 @@
 
 
 /* totop按鈕 */
-.toTop {
-    z-index: 30;
+// .toTop {
+//     z-index: 30;
 
 
-    .toTop-btn {
-        border: none;
-        background: none;
-        cursor: pointer;
+//     .toTop-btn {
+//         border: none;
+//         background: none;
+//         cursor: pointer;
 
 
-        #toTopHover {
-            display: none;
-        }
+//         #toTopHover {
+//             display: none;
+//         }
 
 
-        &:hover {
-            >#toTop {
-                display: none;
-            }
+//         &:hover {
+//             >#toTop {
+//                 display: none;
+//             }
 
 
-            #toTopHover {
-                display: block;
-            }
-        }
-    }
-}
+//             #toTopHover {
+//                 display: block;
+//             }
+//         }
+//     }
+// }
 
 
 

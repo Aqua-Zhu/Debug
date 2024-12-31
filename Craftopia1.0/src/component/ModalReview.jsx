@@ -1,8 +1,20 @@
 import React, { useState } from "react";
 import "../scss/_style_ModalReview.scss";
-
+import { useEffect, useState } from "react";
 
 const ModalReview = ({ isOpen, onClose }) => {
+    // 鎖定心得彈窗背景頁面滾動
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add("lock-scroll");
+        } else {
+            document.body.classList.remove("lock-scroll");
+        }
+
+        return () => {
+            document.body.classList.remove("lock-scroll");
+        };
+    }, [isOpen]);
 
     const [isThisButtonActive, setIsThisButtonActive] = useState(true);
 
@@ -126,7 +138,7 @@ const ModalReview = ({ isOpen, onClose }) => {
 
                             </div>
                             <div className="rvwRight">
-                                <img src="./images/icons-X.svg" alt="" id="iconX" onClick={onClose}/>
+                                <img src="./images/icons-X.svg" alt="" id="iconX" onClick={onClose} />
                                 <div className="row1">
                                     <figure className="idPic"><img src={currentSlide.idPic} alt="" /></figure>
                                     <p className="idName">{currentSlide.idName}</p>

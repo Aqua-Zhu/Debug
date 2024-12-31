@@ -56,6 +56,18 @@ function ClassPage() {
   const handleCloseModalRsv = () => {
     setIsModalRsvOpen(false);  // 關閉 ModalRsv
   };
+    // 鎖定預約彈窗背景頁面滾動
+    useEffect(() => {
+      if (isModalRsvOpen) {
+        document.body.classList.add("lock-scroll");
+      } else {
+        document.body.classList.remove("lock-scroll");
+      }
+    
+      return () => {
+        document.body.classList.remove("lock-scroll");
+      };
+    }, [isModalRsvOpen]);
 
   //人數按鈕
   const [adultCount, setAdultCount] = useState(0); // 成人人數
