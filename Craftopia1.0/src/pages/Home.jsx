@@ -44,7 +44,7 @@ export default function Home(){
                                         <img src="./images/title-lesson.png" alt="" />
                                     </figure>
                                 </header>
-                                <div className="wrapper" data-aos="fade-up">
+                                <div className="wrapper" data-aos="fade-left">
                                     <a href="https://www.google.com/?authuser=0" className="card contain1">
                                         <h3 className="title-class">皮<br />革</h3>
                                         <h3 className="flex pt1">皮革</h3>
@@ -70,7 +70,7 @@ export default function Home(){
                                 </div>
                                 {/* 裝飾物件 */}
                                 <figure id="line-1"><img src="./images/line-1.png" alt="" /></figure>
-                                <figure id="tool"><img src="./images/compass.svg" alt="" /></figure>
+                                <figure id="tool" data-aos="fade-right"><img src="./images/compass.svg" alt="" /></figure>
                                 <figure id="title-2" data-aos="fade-up"><img src="./images/title-choice-lesson.png" alt="" /></figure>
                                 <figure className="blob-5"><img src="./images/blob-home5.svg" alt="" /></figure>
                                 <figure className="blob-6"><img src="./images/blob-6.svg" alt="" /></figure>
@@ -87,7 +87,7 @@ export default function Home(){
                         </header>
                         <section id="choice">
                         <div className="arr1">
-                            <article id="cho-1" data-aos="fade-up">
+                            <article id="cho-1" data-aos="fade-right">
                                 <div className="indexHotPic1">
                                     <img src="./images/indexHot-1.svg" alt="" />
                                 </div>
@@ -102,7 +102,7 @@ export default function Home(){
                                 <Seemore text={'see more'} imgBall={"./images/Vector-circle-y.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} />
 
                             </article>
-                            <article id="cho-2" data-aos="fade-up">
+                            <article id="cho-2" data-aos="fade-right">
                                 <div className="indexHotPic2">
                                     <img src="./images/indexHot-2.svg" alt="" />
                                 </div>
@@ -116,7 +116,7 @@ export default function Home(){
 
 
                         </div>
-                        <article id="cho-3" data-aos="fade-up">
+                        <article id="cho-3" data-aos="fade-right">
                             <div className="indexHotPic3">
                                 <img src="./images/indexHot-3.svg" alt="" />
                             </div>
@@ -127,27 +127,12 @@ export default function Home(){
                                     <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li>
                                 </ul>
 
-
                                 <Seemore text={'see more'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} />
                             </div>
-
-
                         </article>
 
-                            {/* <article id="cho-3" data-aos="fade-up">
-                                <img src="./images/cho-3.png" alt="" />
-                                <div className="cho-content">
-                                    <h2>聖誕節前夕來場約會!!<br />『 TAO TAO 工作室』雙人陶藝體驗課</h2>
-                                    <li>課程中可學習陶藝基本技法，以引導的方式讓兩人共同創作，若有任何製作上的需求，可以在課程中與老師討論。</li>
-                                    <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li> */}
-                                    {/* <Seemore text={'see more'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /> */}
-                                    {/* <Seemore text={'see more'} imgBall={"./images/Vector-circle-b.png"}/> */}
-                                    
-
-                                {/* </div>
-                            </article> */}
                             {/* 裝飾物件 */}
-                            <figure id="tool-2"><img src="./images/jewelrySaw.png" alt="" /></figure>
+                            <figure id="tool-2" data-aos="fade-up"><img src="./images/jewelrySaw.png" alt="" /></figure>
                             <figure id="tool-3"><img src="./images/woodStick.png" alt="" /></figure>
                             <figure id="line-2"><img src="./images/line-2.png" alt="" /></figure>
                             <figure className="blob-9"><img src="./images/blob-9.svg" alt="" /></figure>
@@ -159,13 +144,13 @@ export default function Home(){
                         <section id="activity">
                             <div id="act-bg">
                                 <header>
-                                    <figure className="title" data-aos="fade-up">
+                                    <figure className="title" data-aos="fade-down">
                                         <img className="actTitle-str" src="./images/title-activity.png" alt="" />
                                         <img className="actTitle-row" src="./images/title-activity-row.svg" alt="" />
                                         </figure>
                                 </header>
-                                <article data-aos="fade-up">
-                                    <div className="act" data-aos="fade-up">
+                                <article >
+                                    <div className="act" data-aos="flip-up">
                                         <img src="./images/act-1.png" alt="" />
                                         <div className="act-content">
                                             <p>2024 年 10 月 13 日</p>
@@ -176,7 +161,7 @@ export default function Home(){
                                         </div>
                                     </div>
                                     <figure id="act-line"><img src="./images/act-line.png" alt="" /></figure>
-                                    <div className="act" data-aos="fade-up">
+                                    <div className="act" data-aos="flip-up">
                                         <img src="./images/act-2.png" alt="" />
                                         <div className="act-content">
                                             <p>2024 年 10 月 13 日</p>
