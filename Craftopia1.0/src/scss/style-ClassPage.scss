@@ -278,38 +278,7 @@
             }
         }
 
-        .icons-heart {
-            width: 36px;
-            cursor: pointer;
-            transition: .3s;
 
-            @for $HeartNum from 1 through 6 {
-
-                #heartstrike#{$HeartNum} {
-                    display: flex;
-
-                    &.click-h {
-                        display: none;
-                    }
-                }
-
-                #heartfill#{$HeartNum} {
-                    display: none;
-
-                    &.click-h {
-                        display: flex;
-                        width: 35px;
-                    }
-                }
-            }
-
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.2);
-                background-image: url(./images/icons-heart-hover.svg);
-                background-size: cover;
-            }
-        }
 
 
         // #heart {
@@ -818,10 +787,7 @@
                             overflow: hidden;
                         }
 
-                        .icons-heart {
-                            width: 24px;
-                            height: 24px;
-                        }
+
                     }
 
                     .classPrice {

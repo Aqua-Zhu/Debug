@@ -14,8 +14,6 @@ export default function Hearttoggle({heartFillId,heartStrikeId}) {
     return (
         <>
             <figure className="icons-heart" onClick={()=>{
-                // let fillheart=document.getElementById(heartFillId);
-                // let strikeheart=document.getElementById(heartStrikeId);
                 fillheartRef.current.classList.toggle('click-h');
                 strikeheartRef.current.classList.toggle('click-h');
                 CheckClass();
