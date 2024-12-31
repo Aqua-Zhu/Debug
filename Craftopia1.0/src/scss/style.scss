@@ -12,7 +12,7 @@
     width: 24px;
     cursor: pointer;
     z-index: 20;
-    transition: .3s;
+    
 
     @for $HeartNum from 1 through 6 {
 
@@ -32,6 +32,7 @@
         }
 
         img {
+            transition: .3s;
             &:hover {
                 cursor: pointer;
                 transform: scale(1.2);
