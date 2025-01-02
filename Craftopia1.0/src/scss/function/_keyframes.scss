@@ -256,16 +256,31 @@
 
 @keyframes shake-featRoll {
     0% {
-        transform: rotate(0deg) translateY(0px);
+        transform: rotate(0deg) ;
 
     }
 
     50% {
-        transform: rotate(180deg) translateY(-20px);
+        transform: rotate(180deg) ;
     }
 
     100% {
-        transform: rotate(360deg) translateY(0px);
+        transform: rotate(360deg) ;
+    }
+}
+
+@keyframes shake-ro-featRoll {
+    0% {
+        transform: rotate(0deg) ;
+
+    }
+
+    50% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(-360deg) ;
     }
 }
 

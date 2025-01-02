@@ -111,11 +111,14 @@
                 width: 4rem;
                 align-self: end;
                 margin-top: -10px;
-
+                display: flex;
+                justify-content: center;
+                padding-top: 8px;
                 small {
                     font-size: $font-size-s;
                     color: $color-brown-light;
                     border-bottom: 1px solid $color-brown-light;
+                    text-align: center;
                 &:hover{
                     color: $color-brown-dark;
                     border-bottom:1px solid  $color-brown-dark;
@@ -154,7 +157,14 @@
                     }
                 }
             }
-
+            #loginBtn{
+                align-self: center;
+                flex-direction: column;
+                width: 40%;
+            }
+            #memberIn{
+                align-self: center;
+            }
             button {
                 padding: 10px 20px;
                 background-color: white;
@@ -166,7 +176,8 @@
                 width: 20%;
                 min-width: 80px;
                 margin-top: 20px;
-                align-self: center;
+                // display: flex;
+                // align-items: center;
 
                 &:hover {
                     background-color: $color-coffee-dark;

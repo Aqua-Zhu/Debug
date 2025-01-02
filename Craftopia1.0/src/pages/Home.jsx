@@ -83,13 +83,13 @@ export default function Home(){
                         <header>
                             {/* 預留給標題 */}
                             {/* <a className="btn-classes" href=""><span>All class</span></a> */}
-                            <p className="btn-classes" data-aos="fade-up"><Seemore text={'All class'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /></p>
+                            <p className="btn-classes" data-aos="fade-up"><Seemore text={'All class'} imgBall={"./images/Vector-circle-b.png"} href='/classpage' /></p>
                         </header>
                         <section id="choice">
                         <div className="arr1">
                             <article id="cho-1" data-aos="fade-right">
                                 <div className="indexHotPic1">
-                                    <img src="./images/indexHot-1.svg" alt="" />
+                                    <img src="./images/cho-1.png" alt="" />
                                 </div>
 
 
@@ -99,26 +99,26 @@ export default function Home(){
                                     <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li>
                                 </ul>
                                 {/* <a href=""><span>see more</span> </a> */}
-                                <Seemore text={'see more'} imgBall={"./images/Vector-circle-y.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} />
+                                <Seemore text={'see more'} imgBall={"./images/Vector-circle-y.png"} href='/classpage' />
 
                             </article>
                             <article id="cho-2" data-aos="fade-right">
                                 <div className="indexHotPic2">
-                                    <img src="./images/indexHot-2.svg" alt="" />
+                                    <img src="./images/cho-2.png" alt="" />
                                 </div>
                                 <ul className="cho-content">
                                     <h2>聖誕節前夕來場約會!!<br />『 TAO TAO 工作室』雙人陶藝體驗課</h2>
                                     <li>課程中可學習陶藝基本技法，以引導的方式讓兩人共同創作，若有任何製作上的需求，可以在課程中與老師討論。</li>
                                     <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li>
                                 </ul>
-                                <Seemore text={'see more'} imgBall={"./images/Vector-circle-db.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} />
+                                <Seemore text={'see more'} imgBall={"./images/Vector-circle-db.png"} href='/classpage' />
                             </article>
 
 
                         </div>
                         <article id="cho-3" data-aos="fade-right">
                             <div className="indexHotPic3">
-                                <img src="./images/indexHot-3.svg" alt="" />
+                                <img src="./images/cho-3.png" alt="" />
                             </div>
                             <div className=" indexHotCon3">
                                 <ul className="indexHotCon3-text">
@@ -127,7 +127,7 @@ export default function Home(){
                                     <li>報名多堂課程及團體課程，皆有相關優惠，歡迎詢問報名。</li>
                                 </ul>
 
-                                <Seemore text={'see more'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} />
+                                <Seemore text={'see more'} imgBall={"./images/Vector-circle-b.png"} href='/classpage' />
                             </div>
                         </article>
 
@@ -178,13 +178,13 @@ export default function Home(){
                             <figure className="blob-14"><img src="./images/blob-14.svg" alt="" /></figure>
                             <figure id="tool-4"><img src="./images/cSeat.png" alt="" /></figure>
                             <figure className="line-3"><img src="./images/line-3.png" alt="" /></figure>
-                            <p className="Info-btn" href="" data-aos="fade-up"><Seemore text={'All Info'} imgBall={"./images/Vector-circle-b.png"} href={"https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH"} /></p>
+                            <p className="Info-btn" href="" data-aos="fade-up"><Seemore text={'All Info'} imgBall={"./images/Vector-circle-b.png"} href='/classpage' /></p>
 
                         </section>
                         {/* 關於我們 */}
                         {/* <figure id="us-bg"><img src="./images/aboutus-bg.png" alt="" /></figure> */}
                         <div id="feature-all">
-                            <section id="about" /*data-aos="flip-up"*/>
+                            <section id="about" data-aos="flip-up">
                                 <header>
                                     <figure className="title"><img src="./images/title-aboutus.png" alt="" /></figure>
                                 </header>
@@ -210,7 +210,7 @@ export default function Home(){
                             {/* 我們的特色 */}
                             <section id="feature">
                                 <header>
-                                    <figure className="title"><img src="./images/title-feature.png" alt="" /></figure>
+                                    <figure className="title" data-aos="fade-up"><img src="./images/title-feature.png" alt="" /></figure>
                                 </header>
                                 <div className="feat-content" data-aos="fade-up">
                                     {/* 圓圈跟線段分開-動畫 */}

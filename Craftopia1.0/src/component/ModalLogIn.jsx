@@ -2,6 +2,7 @@ import "../scss/_style_ModalLogIn.scss";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebookF } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const ModalLogIn = ({ isOpen, onClose }) => {
@@ -64,10 +65,12 @@ const ModalLogIn = ({ isOpen, onClose }) => {
                                         />
                                     </div>
                                     <a href="#"><small>忘記密碼</small></a>
-                                    <button type="submit">登入</button>
+                                    <Link to='/member' id="loginBtn">
+                                    <button type="submit" id="memberIn">登入</button>
                                     <hr />
                                     <button id="googleLogin"><FcGoogle /> 以 google 繼續</button>
                                     <button id="fbLogin"><FaFacebookF /> 以 facebook 繼續</button>
+                                    </Link>
                                 </form>
                             </div>
                         )}
