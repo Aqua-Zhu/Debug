@@ -43,7 +43,7 @@ export default function Home() {
                                 <figure className="title" data-aos="fade-up">
                                     <img src="./images/title-lesson.png" alt="" />
                                 </figure>
-                                <p className="lesson-text">想要動手做專屬於你的工藝最品嗎？<br />
+                                <p className="lesson-text" data-aos="fade-up">想要動手做專屬於你的工藝最品嗎？<br />
                                     Craftopia 一次搜羅台北地區的 <span>金工／陶藝／皮革</span>特色手作工作室。<br />
                                     清晰的<span>地圖</span>與<span>品牌</span>介紹，輕鬆探索有趣課程，一鍵預約，說走就走！<br />
                                     不論是初次嘗試還是老手上陣，獨自挑戰或揪團同樂，都能在這裡找到讓你心動的手作體驗！</p>
