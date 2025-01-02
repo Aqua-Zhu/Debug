@@ -46,7 +46,7 @@ function MapMain() {
 
   /* AOS 初始化 */
   useEffect(() => {
-
+    window.scrollTo(0, 0);
     AOS.init(); // 初始化
 
   }, [])
