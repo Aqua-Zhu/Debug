@@ -49,3 +49,17 @@ a {
     text-decoration: none;
 }
 /*reset end*/
+
+
+
+::-webkit-scrollbar {
+    //捲軸
+    width: 10px; //垂直捲軸寬
+    background-color: #f7f2e8;
+}
+
+::-webkit-scrollbar-thumb {
+    //捲軸手柄
+    background-color: #938588;
+    border-radius: 5px;
+}

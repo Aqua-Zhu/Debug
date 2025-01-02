@@ -16,13 +16,13 @@ export default function Shop() {
         AOS.init();
     }, [])
     // 控制 ModalReview 開啟狀態
-    const [isModalReviewOpen, setIsModalReviewOpen] = useState(false);
-    const handleOpenModalReview = () => {
-        setIsModalReviewOpen(true);  // 開啟 ModalReview
-    };
-    const handleCloseModalReview = () => {
-        setIsModalReviewOpen(false);  // 關閉 ModalReview
-    };
+    // const [isModalReviewOpen, setIsModalReviewOpen] = useState(false);
+    // const handleOpenModalReview = () => {
+    //     setIsModalReviewOpen(true);  // 開啟 ModalReview
+    // };
+    // const handleCloseModalReview = () => {
+    //     setIsModalReviewOpen(false);  // 關閉 ModalReview
+    // };
 
     const initialStyle = {
         position: "fixed",
@@ -105,14 +105,14 @@ export default function Shop() {
                                     </a>
                                 </div>
                                 <div className="share-btn" data-aos="fade-right">
-                                    {/* <Seemore text='See All' imgBall="./images/Vector-circle-b.png" href="https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH" /> */}
-                                    <button className="seemore-btn" onClick={handleOpenModalReview}>
+                                    <Seemore text='See All' imgBall="./images/Vector-circle-b.png" href="https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH" />
+                                    {/* <button className="seemore-btn" onClick={handleOpenModalReview}> */}
                                         {/* ModalReview 元件 */}
-                                        <ModalReview isOpen={isModalReviewOpen} onClose={handleCloseModalReview} />
+                                        {/* <ModalReview isOpen={isModalReviewOpen} onClose={handleCloseModalReview} />
                                         <img className="ball" src="./images/Vector-circle-b.png" alt="" />
                                         <span className="font">see all(485)</span>
-                                        <img className="arr" src="./images/Vector-arr.png" alt="" />
-                                    </button>
+                                        <img className="arr" src="./images/Vector-arr.png" alt="" /> */}
+                                    {/* </button> */}
                                 </div>
 
                             </section>
