@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { GoogleMap, useJsApiLoader, Marker, InfoWindow, } from '@react-google-maps/api';
 
 import Hearttoggle from "./Hearttoggle";
-import { Link } from "react-router-dom";
 
 
 
@@ -473,7 +472,7 @@ const MyGmap = ({ filteredStore }) => {
                                 <div className="InfoStoreDetail">
                                     <p className="InfoLocation">{selectedMarker.location}</p>
                                     <p className={`InfoType  ${selectedMarker.tag === "pottery" ? "pottery" : ""}`} style={{
-                                        backgroundImage: `url('../images/tag-${selectedMarker.tag}.svg')`,
+                                        backgroundImage: `url('./images/tag-${selectedMarker.tag}.svg')`,
                                     }}>{selectedMarker.type}</p>
                                 </div>
                                 <button onClick={() => { setSelectedMarker(null) }}>
@@ -516,7 +515,7 @@ const MyGmap = ({ filteredStore }) => {
                         <button
                             onClick={() => setSelectedMarker(null)}
                         >
-                            <img src="/images/icons-closeBlack.svg" alt="" />
+                            <img src="/images/icons-closeBlack.svg" alt="" className="closeIcon"/>
                         </button>
 
                         <div className="content-bottom">
@@ -541,7 +540,7 @@ const MyGmap = ({ filteredStore }) => {
 
                             </div>
                             <p className="storeDescribe">{selectedMarker.detail}</p>
-                            <Link to='/shop' className="storeBtn">前往店家頁 <img src="/images/icons-linkArrow.svg" alt="icon" /></Link>
+                            <a className="storeBtn" href="#" >前往店家頁 <img src="/images/icons-linkArrow.svg" alt="icon" /></a>
                         </div>
                     </div>
                 )}

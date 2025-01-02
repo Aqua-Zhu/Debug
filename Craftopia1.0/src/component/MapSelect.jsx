@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function MapSelect({ handleSearch }) {
+function MapSelect({ handleSearch ,  searchTerm, setSearchTerm }) {
 
 
     const [locationIsOpen, setLocationIsOpen] = useState(false);
@@ -126,14 +126,23 @@ function MapSelect({ handleSearch }) {
 
         console.log(`選的值：${value}`);
 
+    };
+
+
+    useEffect(() => {
         const filters = {
-            location: newSelectedLOption.value,
-            type: newSelectedTOption.value,
+            location: selectedLOption?.value || null,
+            type: selectedTOption?.value || null,
+            searchTerm: searchTerm, // 使用最新的 searchTerm
         };
 
         handleSearch(filters);
-    };
+    }, [searchTerm, selectedLOption, selectedTOption]); // 監聽所有篩選條件的變化
 
+
+    const handleInputChange = (e) => {
+        setSearchTerm(e.target.value);
+    };
 
 
 
@@ -156,6 +165,7 @@ function MapSelect({ handleSearch }) {
     }, []);
 
 
+    // AOS 套件初始化設定
     useEffect(() => {
     
         AOS.init(); // 初始化
@@ -167,7 +177,8 @@ function MapSelect({ handleSearch }) {
     return (
         <>
             <div data-aos="fade-left" className="map-select">
-                <input type="text" name="map-searchStore" id="map-searchStore" title="姓名" placeholder="搜尋店家" />
+                <input type="text" name="map-searchStore" id="map-searchStore" title="姓名" placeholder="輸入店名" value={searchTerm} // 綁定父層狀態
+                    onChange={handleInputChange} />
 
                 {/* 下拉選單顯示選擇區塊 */}
                 <div id="storeSelect" className={`select ${locationIsOpen ? "open" : ""} ${selectedLOption.value !== null ? "active" : ""}`} onClick={() => { toggleDropdown("location") }}>

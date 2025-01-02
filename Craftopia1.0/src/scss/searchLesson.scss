@@ -294,6 +294,7 @@
 
 
 }
+
 @media ($mediaMd) {
 
     #SearchBanner {
@@ -507,7 +508,7 @@
         background-color: rgba(255, 255, 255, 0.6);
 
         border-radius: 100px;
-        transition:  background-color 0.5s ease-in-out;
+        transition: background-color 0.5s ease-in-out;
 
 
 
@@ -528,7 +529,7 @@
             }
         }
 
-        &:hover{
+        &:hover {
             background-color: rgba(255, 255, 255);
         }
 
@@ -549,9 +550,17 @@
 
             .option-container {
                 display: block;
-                
+
                 background-color: rgb(255, 255, 255);
             }
+        }
+
+
+        &.active {
+
+
+            background-color: #B99C92;
+
         }
 
 
@@ -563,7 +572,7 @@
 
         .option-container {
             display: none;
-            
+
             background-color: rgba(255, 255, 255, 0.6);
 
             border: 1px solid #D9D9D9;
@@ -575,7 +584,8 @@
             z-index: 20;
 
             border-radius: 0 0 24px 24px;
-            transition:  background-color 0.5s ease-in-out;
+            transition: background-color 0.5s ease-in-out;
+
             .select-option {
 
                 padding: 24px;
@@ -684,7 +694,9 @@
 
         font-size: 14px;
 
+
         .classify {
+
 
             .option-container {
                 .select-option {
@@ -742,6 +754,8 @@
 
 
 
+
+
 /* 共用課程列表區 */
 .courseSection {
 
@@ -762,7 +776,11 @@
 
     }
 
-    
+    &.noCard {
+
+        padding-bottom: 240px;
+    }
+
 }
 
 .classList {
@@ -783,13 +801,14 @@
     position: relative;
     width: 100%;
     height: auto;
-    
+
 
     div {
 
         display: flex;
         justify-content: space-between;
     }
+
     .classPhoto {
 
         position: relative;
@@ -860,13 +879,13 @@
 
         .classLevel {
             background-image: url(./images/tag-level.svg);
-            background-size:100% 100%;
+            background-size: 100% 100%;
             padding: 7px 16px 8px;
         }
 
         .classTime {
             background-image: url(./images/tag-time.svg);
-            background-size:100% 100%;
+            background-size: 100% 100%;
             padding: 5px 17.5px 4px 13px;
         }
     }
@@ -883,8 +902,8 @@
             margin-right: 4px;
 
             @extend %line-multiple;
-            -webkit-line-clamp: 2; 
-            line-clamp: 2; 
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
 
             a {
 
@@ -900,7 +919,7 @@
             }
         }
 
-        img{
+        img {
             width: 24px;
         }
     }
@@ -913,22 +932,22 @@
         .classStoreName {
             color: #5a5a5a;
             font-size: 16px;
-            width:  140px;
-             
-            
+            width: 140px;
+
+
             @extend %line-multiple;
             -webkit-line-clamp: 1; // 行數6行
             line-clamp: 1; // 要重複寫一個沒有webkit的 以防之後變成正式的寫法
 
             a {
 
-                
+
                 transition: all 0.5s ease-in-out;
 
                 &:hover {
 
                     color: #939393;
-                    
+
                 }
             }
         }
@@ -936,18 +955,18 @@
         .price {
             color: #483D3F;
             font-size: 22px;
-            
+
         }
     }
 
-    
+
 
     &:hover {
 
         .classPhoto {
 
             clip-path: polygon(40% 0, 73% 4%, 92% 33%, 89% 75%, 77% 94%, 48% 100%, 17% 95%, 6% 76%, 5% 39%, 15% 10%);
-            
+
             &:hover {
 
                 p {
@@ -956,7 +975,7 @@
                     img {
 
                         animation: moveArrow 0.6s ease-in-out infinite alternate;
-                        
+
                     }
 
                 }
@@ -971,6 +990,27 @@
         }
     }
 }
+
+
+#searchResault{
+    .resultOption{
+        
+        display: flex;
+        font-size: 18px;
+        margin: 28px 0;
+        width: 80%;
+        color: #3d3d3d;
+
+        p{
+            margin: 0 6px;
+            font-weight: 500;
+            color: #483D3F;
+        }
+    }
+}
+
+
+
 
 
 
@@ -997,7 +1037,7 @@
 
 /* seemore 按鈕 */
 .seeMore {
-    
+
     font-family: "Braah One", serif;
     display: inline-flex;
     align-items: center;
@@ -1009,7 +1049,7 @@
     font-weight: bold;
     cursor: pointer;
 
-    
+
 
     .arr {
         margin-left: 65px;
@@ -1060,6 +1100,13 @@
 /* 搜尋後沒有結果 */
 .noresult {
     font-size: 20px;
+    font-weight: 400;
+    color: #3d3d3d;
+
+    span{
+        font-weight: 500;
+        color: #483D3F;
+    }
 }
 
 
@@ -1218,11 +1265,11 @@ footer {
 @keyframes moveArrow {
     0% {
         transform: translateX(0);
-        
+
     }
 
     100% {
         transform: translateX(10px);
-        
+
     }
 }
