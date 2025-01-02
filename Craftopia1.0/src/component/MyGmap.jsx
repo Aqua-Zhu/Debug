@@ -476,11 +476,11 @@ const MyGmap = ({ filteredStore }) => {
                                     }}>{selectedMarker.type}</p>
                                 </div>
                                 <button onClick={() => { setSelectedMarker(null) }}>
-                                    <img src="/images/icons-close.svg" alt="" />
+                                    <img src="./images/icons-close.svg" alt="" />
                                 </button>
                             </div>
                             <div className="InfoContent">
-                                <img src="/images/icons-mapWorkshopLocation.svg" alt="" />
+                                <img src="./images/icons-mapWorkshopLocation.svg" alt="" />
                                 <h3><a href="#">{selectedMarker.storeName}</a></h3>
                             </div>
 
@@ -515,7 +515,7 @@ const MyGmap = ({ filteredStore }) => {
                         <button
                             onClick={() => setSelectedMarker(null)}
                         >
-                            <img src="/images/icons-closeBlack.svg" alt="" className="closeIcon"/>
+                            <img src="./images/icons-closeBlack.svg" alt="" className="closeIcon"/>
                         </button>
 
                         <div className="content-bottom">
@@ -540,7 +540,7 @@ const MyGmap = ({ filteredStore }) => {
 
                             </div>
                             <p className="storeDescribe">{selectedMarker.detail}</p>
-                            <a className="storeBtn" href="#" >前往店家頁 <img src="/images/icons-linkArrow.svg" alt="icon" /></a>
+                            <a className="storeBtn" href="#" >前往店家頁 <img src="./images/icons-linkArrow.svg" alt="icon" /></a>
                         </div>
                     </div>
                 )}

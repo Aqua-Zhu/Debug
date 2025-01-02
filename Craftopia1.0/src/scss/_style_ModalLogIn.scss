@@ -160,7 +160,7 @@
             #loginBtn{
                 align-self: center;
                 flex-direction: column;
-                width: 40%;
+                width: 100%;
             }
             #memberIn{
                 align-self: center;
@@ -193,7 +193,9 @@
                 width: auto;
                 
             }
-
+            #createMember{
+                align-self: center;
+            }
             hr {
                 width: 80%;
                 border: none;

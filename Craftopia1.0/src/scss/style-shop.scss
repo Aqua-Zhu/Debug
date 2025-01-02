@@ -935,10 +935,11 @@
 
         .class-row {
             justify-content: space-evenly;
-
+            
             .classCard {
-                margin: 0;
+                margin: 20px;
                 margin-bottom: 50px;
+                width: 35%;
                 .classPhoto {
                     height: 200px;
                 }
@@ -960,7 +961,7 @@
             align-items: center;
 
             .classCard {
-                width: 65%;
+                width: 80%;
                 margin: 35px 0;
 
                 // debug or unclear

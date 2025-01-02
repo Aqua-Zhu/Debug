@@ -23,8 +23,6 @@ const ModalLogIn = ({ isOpen, onClose }) => {
 
     
 
-
-
     return (
         <>
             <div className="ModalLogIn-overlay" onClick={onClose} >
@@ -102,7 +100,7 @@ const ModalLogIn = ({ isOpen, onClose }) => {
                                             placeholder="請再次輸入您的密碼"
                                         />
                                     </div>
-                                    <button type="submit">註冊</button>
+                                    <button type="submit" id="createMember">註冊</button>
                                     <hr />
                                     <button id="googleLogin-register"><FcGoogle /> 以 google 繼續</button>
                                     <button id="fbLogin-register"><FaFacebookF /> 以 facebook 繼續</button>
