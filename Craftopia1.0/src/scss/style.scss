@@ -1284,10 +1284,13 @@
         }
 
         #cho-3 {
-
             width: calc(86% * 0.8);
             padding: 0;
-
+            .indexHotCon3{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             .indexHotPic3 {
                 width: 100%;
                 margin: 0;
@@ -1509,7 +1512,7 @@
 
     @media ($mediaSm) {
         padding-bottom: 150px;
-        margin-bottom: 50px;
+        margin-bottom: 0;
 
         #act-bg {
             margin: 0 25px;
@@ -1590,7 +1593,7 @@
         }
 
         .line-3 {
-            bottom: -20px;
+            bottom: 0px;
         }
     }
 }
@@ -1755,16 +1758,16 @@
         #about {
             .title {
                 width: 140px;
-                top: 150px;
+                top: 90px;
                 right: -80px;
                 rotate: 20deg;
             }
 
             article {
-                margin-top: 50px;
+                margin-top: 30px;
                 background-size: 560px;
                 padding: 0 10% 0 30%;
-
+                height: 600px;
                 h2 {
                     font-size: $font-size-xl ;
 
@@ -1801,21 +1804,49 @@
 
         .feat-content {
             display: flex;
-
-            img {
+            .pointblob{
+                position: relative;
+            }
+            .featureInside{
+                filter: drop-shadow( 10px 10px 20px $color-coffee-dark);
+                position: relative;
                 animation: shake-updown;
                 animation-duration: 2s;
                 animation-timing-function: ease-in-out;
                 animation-iteration-count: infinite;
+                
             }
+            .feature-outside{
+                position: absolute;
+                width: 80%;
+
+            }
+            .feature-outside1,.feature-outside3{
+                top: 6%;
+                left: 8%;
+                animation: shake-featRoll;
+                animation-duration: 3s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+
+
 
             .feat2 {
                 margin-top: 150px;
-
-                img {
+                .featureInside2{
+                    filter: drop-shadow( 10px 10px 20px $color-coffee-dark);
                     animation: shake-ro-updown;
                     animation-duration: 2s;
                     animation-timing-function: ease-in-out;
+                    animation-iteration-count: infinite;
+                }
+                .feature-outside2{
+                    top: 8%;
+                    left: 10%;
+                    animation: shake-featRoll;
+                    animation-duration: 4s;
+                    animation-timing-function: linear;
                     animation-iteration-count: infinite;
                 }
             }
@@ -1936,7 +1967,7 @@
             }
 
             .last {
-                margin: 120px 25px;
+                margin: 120px 25px 165px;
                 padding-bottom: 50px;
 
                 p {
@@ -2027,7 +2058,6 @@
 
 
 body {
-    // background-image: url('./images/background-color.png');
     background-image: url(./images/BG-texture-400.jpg);
     background-repeat: repeat;
     letter-spacing: 2px; //zinia

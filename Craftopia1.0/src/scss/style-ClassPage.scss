@@ -596,6 +596,9 @@
     .expTop {
         display: flex;
         align-items: flex-end;
+        #titleExp{
+            width: 75%;
+        }
         .seemore-btn {
             background-color: transparent;
         }

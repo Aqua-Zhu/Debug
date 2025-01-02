@@ -184,7 +184,7 @@ export default function Home(){
                         {/* 關於我們 */}
                         {/* <figure id="us-bg"><img src="./images/aboutus-bg.png" alt="" /></figure> */}
                         <div id="feature-all">
-                            <section id="about" data-aos="flip-up">
+                            <section id="about" /*data-aos="flip-up"*/>
                                 <header>
                                     <figure className="title"><img src="./images/title-aboutus.png" alt="" /></figure>
                                 </header>
@@ -215,17 +215,20 @@ export default function Home(){
                                 <div className="feat-content" data-aos="fade-up">
                                     {/* 圓圈跟線段分開-動畫 */}
                                     <article className="feat1 pointblob">
-                                        <img src="./images/feature1-svg.png" alt="" />
+                                        <img className="featureInside" src="./images/feature1-inside.svg" alt="" />
+                                        <img className="feature-outside feature-outside1" src="./images/feature-outside.svg" alt="" />
                                         <p><strong>point 1</strong></p>
                                         <p><strong>發掘大台北手工藝商家地圖</strong></p>
                                     </article>
                                     <article className="feat2 pointblob">
-                                        <img src="./images/feature2-svg.png" alt="" />
+                                        <img className="featureInside2" src="./images/feature2-inside.svg" alt="" />
+                                        <img className="feature-outside feature-outside2" src="./images/feature-outside.svg" alt="" />
                                         <p><strong>point 2</strong></p>
                                         <p><strong>預約各式各樣手作課程</strong></p>
                                     </article>
                                     <article className="feat3 pointblob">
-                                        <img src="./images/feature3-svg.png" alt="" />
+                                        <img className="featureInside" src="./images/feature3-inside.svg" alt="" />
+                                        <img className="feature-outside feature-outside3" src="./images/feature-outside.svg" alt="" />
                                         <p><strong>point 3</strong></p>
                                         <p><strong>與他人分享體驗成果</strong></p>
                                     </article>

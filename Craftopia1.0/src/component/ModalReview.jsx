@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "../scss/_style_ModalReview.scss";
 import { useEffect, useState } from "react";
 

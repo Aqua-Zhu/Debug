@@ -1,7 +1,8 @@
 import '../scss/style-shop.scss'
 import Topbar from "../component/Topbar";
 import Seemore from '../component/Seemore';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import ModalReview from "../component/ModalReview";
 import ToTop from '../component/ToTop';
 import ClassCardLatest from '../component/ClassCardLatest';
 import AOS from 'aos';
@@ -9,16 +10,25 @@ import 'aos/dist/aos.css';
 
 export default function Shop() {
     
-    useEffect(()=>{
-        window.scrollTo(0,0);
+    useEffect(() => {
+        window.scrollTo(0, 0);
         AOS.init();
-    },[])
+    }, [])
+    // 控制 ModalReview 開啟狀態
+    // const [isModalReviewOpen, setIsModalReviewOpen] = useState(false);
+    // const handleOpenModalReview = () => {
+    //     setIsModalReviewOpen(true);  // 開啟 ModalReview
+    // };
+    // const handleCloseModalReview = () => {
+    //     setIsModalReviewOpen(false);  // 關閉 ModalReview
+    // };
 
     const initialStyle = {
         position: "fixed",
         bottom: "20px",
         right: "10px",
     };
+
 
     return (
         <>
@@ -68,7 +78,7 @@ export default function Shop() {
                             <section id="lesson-shop" >
                                 <figure className="title-shop" data-aos="fade-right"><img src="./images/lesson.svg" alt="" /></figure>
                                 <div className="class-row" data-aos="fade-up">
-                                    <ClassCardLatest/>
+                                    <ClassCardLatest />
                                 </div>
                                 {/* <button className="see-btn"data-aos="fade-left"/><img className='ball-shop' src="./images/Vector-circle-b.png" alt="" /> <span>See More</span><img className='arr-shop' src="./images/shop-arr.svg" alt="" /></button> */}
                             </section>
@@ -78,32 +88,39 @@ export default function Shop() {
                                 <div id="share-img" data-aos="fade-left">
                                     <a href='#' className='share-card'>
                                         <img src="./images/share-1.png" alt="" />
-                                        <div className='shareHover'> 
+                                        <div className='shareHover'>
                                             <span>手捏陶 DIY 課程-溫潤陶杯<br />2024/10/11</span>
                                         </div>
                                     </a>
                                     <a href='#' className='share-card'><img src="./images/share-2.png" alt="" />
-                                    <div className='shareHover'> 
+                                        <div className='shareHover'>
                                             <span>手捏陶 DIY 課程-溫潤陶杯<br />2024/10/11</span>
                                         </div>
                                     </a>
                                     <a href='#' className='share-card'><img src="./images/share-3.png" alt="" />
-                                    <div className='shareHover'> 
+                                        <div className='shareHover'>
                                             <span>手捏陶 DIY 課程-溫潤陶杯<br />2024/10/11</span>
                                         </div>
                                     </a>
                                 </div>
                                 <div className="share-btn" data-aos="fade-right">
                                     <Seemore text='See All' imgBall="./images/Vector-circle-b.png" href="https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH" />
+                                    {/* <button className="seemore-btn" onClick={handleOpenModalReview}> */}
+                                        {/* ModalReview 元件 */}
+                                        {/* <ModalReview isOpen={isModalReviewOpen} onClose={handleCloseModalReview} /> */}
+                                        {/* <img className="ball" src="./images/Vector-circle-b.png" alt="" />
+                                        <span className="font">see all(485)</span>
+                                        <img className="arr" src="./images/Vector-arr.png" alt="" /> */}
+                                    {/* </button> */}
                                 </div>
 
                             </section>
                             {/* <figure id="blob-1"><img src="./images/Vector-1.png" alt="" /></figure> */}
-                        {/* <figure id="blob-2"><img src="./images/Vector-2.png" alt="" /></figure> */}
-                        {/* <figure id="blob-3"><img src="./images/Vector-3.png" alt="" /></figure> */}
-                        {/* <figure id="blob-4"><img src="./images/Vector-4.png" alt="" /></figure> */}
-                        {/* <figure id="blob-5"><img src="./images/Vector-5.png" alt="" /></figure> */}
-                        {/* <figure id="blob-6"><img src="./images/Vector-6.png" alt="" /></figure> */}
+                            {/* <figure id="blob-2"><img src="./images/Vector-2.png" alt="" /></figure> */}
+                            {/* <figure id="blob-3"><img src="./images/Vector-3.png" alt="" /></figure> */}
+                            {/* <figure id="blob-4"><img src="./images/Vector-4.png" alt="" /></figure> */}
+                            {/* <figure id="blob-5"><img src="./images/Vector-5.png" alt="" /></figure> */}
+                            {/* <figure id="blob-6"><img src="./images/Vector-6.png" alt="" /></figure> */}
 
                         </div>
                         <figure id="blob-1"><img src="./images/Vector-1.png" alt="" /></figure>
