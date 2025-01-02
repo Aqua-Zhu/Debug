@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { GoogleMap, useJsApiLoader, Marker, InfoWindow, } from '@react-google-maps/api';
 
 import Hearttoggle from "./Hearttoggle";
+import { Link } from "react-router-dom";
 
 
 
@@ -540,7 +541,7 @@ const MyGmap = ({ filteredStore }) => {
 
                             </div>
                             <p className="storeDescribe">{selectedMarker.detail}</p>
-                            <a className="storeBtn" href="#" >前往店家頁 <img src="/images/icons-linkArrow.svg" alt="icon" /></a>
+                            <Link to='/shop' className="storeBtn">前往店家頁 <img src="/images/icons-linkArrow.svg" alt="icon" /></Link>
                         </div>
                     </div>
                 )}

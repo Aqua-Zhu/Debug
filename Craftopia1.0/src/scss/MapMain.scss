@@ -5,7 +5,12 @@
 
 
 
-
+/* 全網站背景材質設定區 */
+body {
+    color: #303030;
+    background-image: url(./images/background-textur.jpg);
+    background-attachment: fixed;
+}
 
 
 
@@ -625,7 +630,39 @@
 
 
 
+/* 愛心icon 共用樣式 */
+.icons-heart {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 20;
+    transition: .3s;
+    @for $HeartNum from 1 through 6{
 
+
+        #heartstrike#{$HeartNum}{
+            display: flex;
+            &.click-h{
+                display: none;
+            }
+        }
+        #heartfill#{$HeartNum}{
+            display: none;
+            &.click-h{
+                display: flex;
+                width: 23px;
+            }
+        }
+    }
+
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        background-image: url(./images/icons-heart-hover.svg);
+        background-size: cover;
+    }
+}
 
 
 
@@ -950,33 +987,33 @@
 
 
 /* totop按鈕 */
-// .toTop {
-//     z-index: 30;
+.toTop {
+    z-index: 30;
 
 
-//     .toTop-btn {
-//         border: none;
-//         background: none;
-//         cursor: pointer;
+    .toTop-btn {
+        border: none;
+        background: none;
+        cursor: pointer;
 
 
-//         #toTopHover {
-//             display: none;
-//         }
+        #toTopHover {
+            display: none;
+        }
 
 
-//         &:hover {
-//             >#toTop {
-//                 display: none;
-//             }
+        &:hover {
+            >#toTop {
+                display: none;
+            }
 
 
-//             #toTopHover {
-//                 display: block;
-//             }
-//         }
-//     }
-// }
+            #toTopHover {
+                display: block;
+            }
+        }
+    }
+}
 
 
 
