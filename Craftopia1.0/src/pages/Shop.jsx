@@ -85,7 +85,7 @@ export default function Shop() {
                             </section>
                             { /* 心得分享 */}
                             <section id="share">
-                                <figure className="title-shop" data-aos="fade-right"><img src="/images/share.svg" alt="" /></figure>
+                                <figure className="title-shop" data-aos="fade-right"><img src="./images/share.svg" alt="" /></figure>
                                 <div id="share-img" data-aos="fade-left">
                                     <a href='#' className='share-card'>
                                         <img src="./images/share-1.png" alt="" />
