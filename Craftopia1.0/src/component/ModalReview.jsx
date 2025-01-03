@@ -125,11 +125,17 @@ const ModalReview = ({ isOpen, onClose }) => {
     };
     if (!isOpen) return null;  // 如果 Modal 沒有開啟，不渲染任何東西
 
+    const handleModalClick = (e) => {
+        // 如果點擊的是 overlay 本身 (而不是其子元素)，則關閉 modal
+        if (e.target.className === 'modalReview-overlay') {
+            onClose();
+        }
+    };
     return (
         <>
             <div className="modalReview-overlay" onClick={onClose} >
                 {/* ↑若點擊窗外要觸發關閉，加上 onClick={onClose} */}
-                <div className="modalReview-content" onClick={(e) => e.stopPropagation()}>
+                <div className="modalReview-overlay" onClick={handleModalClick}>
                     <section className="reviewWrap">
                         <div className="reviewContent">
                             <div className="rvwLeft">

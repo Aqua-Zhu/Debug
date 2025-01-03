@@ -455,6 +455,7 @@
     width: 25%;
     position: relative;
     z-index: 88;
+
     #shop-intro {
         position: sticky;
         z-index: 20;
@@ -533,6 +534,7 @@
 
                 .feat2-shop {
                     margin: 20px 10px;
+
                     &::before {
                         rotate: 180deg;
                         top: -25px;
@@ -579,6 +581,7 @@
 
                     .feat2-shop {
                         margin-top: 0;
+
                         &::before {
                             left: -50%;
                         }
@@ -702,12 +705,14 @@
         display: flex;
         margin-bottom: 80px;
         flex-wrap: wrap;
+
         .classCard {
             position: relative;
-            width:30%;
+            width: 30%;
             height: auto;
             margin-right: 140px;
             margin-bottom: 50px;
+
             div {
 
                 display: flex;
@@ -798,6 +803,7 @@
                 align-items: start;
                 margin-bottom: 24px;
                 height: 56px;
+
                 h3 {
                     font-size: 18px;
                     font-weight: 600;
@@ -805,15 +811,18 @@
                     @extend %line-multiple;
                     -webkit-line-clamp: 2;
                     line-clamp: 2;
+
                     a {
                         border-bottom: 2px solid transparent;
                         transition: all 0.5s ease-in-out;
+
                         &:hover {
                             color: #565656;
                             border-bottom: 2px solid #B07662;
                         }
                     }
                 }
+
                 img {
                     width: 24px;
                 }
@@ -822,6 +831,7 @@
             .classPrice {
                 align-items: center;
                 height: 34px;
+
                 .classStoreName {
                     color: #5a5a5a;
                     font-size: 16px;
@@ -829,8 +839,10 @@
                     @extend %line-multiple;
                     -webkit-line-clamp: 1;
                     line-clamp: 1;
+
                     a {
                         transition: all 0.5s ease-in-out;
+
                         &:hover {
                             color: #939393;
                         }
@@ -858,28 +870,29 @@
                         &.click-h {
                             display: none;
                         }
-                        
-                &:hover {
-                    cursor: pointer;
-                    transform: scale(1.2);
-                    background-image: url(./images/icons-heart-hover.svg);
-                    background-size: cover;
-                }
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.2);
+                            background-image: url(./images/icons-heart-hover.svg);
+                            background-size: cover;
+                        }
                     }
 
                     #heartfill#{$HeartNum} {
                         display: none;
+
                         &.click-h {
                             display: flex;
                             width: 23px;
                         }
-                        
-                &:hover {
-                    cursor: pointer;
-                    transform: scale(1.2);
-                    background-image: url(./images/icons-heart-hover.svg);
-                    background-size: cover;
-                }
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.2);
+                            background-image: url(./images/icons-heart-hover.svg);
+                            background-size: cover;
+                        }
                     }
                 }
 
@@ -894,9 +907,11 @@
             &:hover {
                 .classPhoto {
                     clip-path: polygon(40% 0, 73% 4%, 92% 33%, 89% 75%, 77% 94%, 48% 100%, 17% 95%, 6% 76%, 5% 39%, 15% 10%);
+
                     &:hover {
                         p {
                             opacity: 1;
+
                             img {
                                 animation: moveArrow 0.6s ease-in-out infinite alternate;
                             }
@@ -935,11 +950,12 @@
 
         .class-row {
             justify-content: space-evenly;
-            
+
             .classCard {
                 margin: 20px;
                 margin-bottom: 50px;
                 width: 35%;
+
                 .classPhoto {
                     height: 200px;
                 }
@@ -976,7 +992,7 @@
 /*查看全部按鈕*/
 
 .see-btn {
-
+    font-family: "Braah One", serif;
     display: flex;
     width: 150px;
     margin-left: 30%;
@@ -1035,13 +1051,21 @@
         display: flex;
         margin-bottom: 50px;
 
+        button {
+            background: none;
+            border: none;
+        }
+
         .share-card {
+            padding: 0;
             margin-right: 50px;
             z-index: 888;
             transform: scale(1);
             position: relative;
 
             img {
+                width: 100%;
+                border-radius: 10px;
                 transition: .5s;
             }
 
@@ -1054,20 +1078,19 @@
                 span {
                     width: 100%;
                     height: 100%;
+                    font-size: $font-size-m;
+                    font-weight: $font-weight-regular;
                     position: absolute;
                     color: white;
                     background-color: rgba($color: #000000, $alpha: .5);
                     border-radius: 10px;
                     display: flex;
                     align-items: end;
+                    text-align: start;
                     padding-bottom: 20px;
                     padding-left: 10px;
                     opacity: 0;
                     transition: .5s;
-                    // &:hover{
-                    //     opacity: 1;
-                    //     transform: scale(1.1);
-                    // }
                 }
             }
 
@@ -1087,6 +1110,16 @@
 
     .share-btn {
         margin-left: 70%;
+        .seemore-btn{
+            background: none;
+            border: none;
+            font-family: "Braah One", serif;
+            font-weight: 600;
+            font-size: $font-size-m;
+            .font{
+                width: 80%;
+            }
+        }
     }
 
     @media ($mediaMdDown) {

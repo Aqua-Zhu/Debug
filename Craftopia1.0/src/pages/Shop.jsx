@@ -15,14 +15,15 @@ export default function Shop() {
         window.scrollTo(0, 0);
         AOS.init();
     }, [])
+    
     // 控制 ModalReview 開啟狀態
-    // const [isModalReviewOpen, setIsModalReviewOpen] = useState(false);
-    // const handleOpenModalReview = () => {
-    //     setIsModalReviewOpen(true);  // 開啟 ModalReview
-    // };
-    // const handleCloseModalReview = () => {
-    //     setIsModalReviewOpen(false);  // 關閉 ModalReview
-    // };
+    const [isModalReviewOpen, setIsModalReviewOpen] = useState(false);
+    const handleOpenModalReview = () => {
+        setIsModalReviewOpen(true);  // 開啟 ModalReview
+    };
+    const handleCloseModalReview = () => {
+        setIsModalReviewOpen(false);  // 關閉 ModalReview
+    };
 
     const initialStyle = {
         position: "fixed",
@@ -87,32 +88,34 @@ export default function Shop() {
                             <section id="share">
                                 <figure className="title-shop" data-aos="fade-right"><img src="./images/share.svg" alt="" /></figure>
                                 <div id="share-img" data-aos="fade-left">
-                                    <a href='#' className='share-card'>
+                                    <button  className='share-card' onClick={handleOpenModalReview}>
                                         <img src="./images/share-1.png" alt="" />
                                         <div className='shareHover'>
                                             <span>手捏陶 DIY 課程-溫潤陶杯<br />2024/10/11</span>
                                         </div>
-                                    </a>
-                                    <a href='#' className='share-card'><img src="./images/share-2.png" alt="" />
+                                    </button>
+                                    <button className='share-card' onClick={handleOpenModalReview}>
+                                        <img src="./images/share-2.png" />
                                         <div className='shareHover'>
-                                            <span>手捏陶 DIY 課程-溫潤陶杯<br />2024/10/11</span>
+                                            <span>居家擺飾陶器創作體驗<br />2024/12/13</span>
                                         </div>
-                                    </a>
-                                    <a href='#' className='share-card'><img src="./images/share-3.png" alt="" />
-                                        <div className='shareHover'>
-                                            <span>手捏陶 DIY 課程-溫潤陶杯<br />2024/10/11</span>
+                                    </button>
+                                    <button className='share-card' onClick={handleOpenModalReview}>
+                                        <img src="./images/share-3.png" />
+                                        <div className='shareHover' >
+                                            <span>陶藝進階挑戰！打造屬於自己的陶器<br />2024/9/21</span>
                                         </div>
-                                    </a>
+                                    </button>
                                 </div>
                                 <div className="share-btn" data-aos="fade-right">
-                                    <Seemore text='See All' imgBall="./images/Vector-circle-b.png" href="https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH" />
-                                    {/* <button className="seemore-btn" onClick={handleOpenModalReview}> */}
+                                    {/* <Seemore text='See All' imgBall="./images/Vector-circle-b.png" href="https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH" /> */}
+                                    <button className="seemore-btn" onClick={handleOpenModalReview}>
                                         {/* ModalReview 元件 */}
-                                        {/* <ModalReview isOpen={isModalReviewOpen} onClose={handleCloseModalReview} />
+                                        <ModalReview isOpen={isModalReviewOpen} onClose={handleCloseModalReview} />
                                         <img className="ball" src="./images/Vector-circle-b.png" alt="" />
-                                        <span className="font">see all(485)</span>
-                                        <img className="arr" src="./images/Vector-arr.png" alt="" /> */}
-                                    {/* </button> */}
+                                        <span className="font">See All</span>
+                                        <img className="arr" src="./images/Vector-arr.png" alt="" />
+                                    </button>
                                 </div>
 
                             </section>
@@ -140,6 +143,11 @@ export default function Shop() {
                         {/* <figure id="blob-6"><img src="./images/Vector-6.png" alt="" /></figure> */}
                     </div>
                     <ToTop initialStyle={initialStyle} />
+                     {/* Modal Review Component */}
+                    <ModalReview
+                        isOpen={isModalReviewOpen}
+                        onClose={handleCloseModalReview}
+                    />
 
                     { /* footer */}
                     <footer>
