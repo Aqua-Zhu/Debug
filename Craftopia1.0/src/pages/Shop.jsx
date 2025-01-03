@@ -111,7 +111,7 @@ export default function Shop() {
                                     {/* <Seemore text='See All' imgBall="./images/Vector-circle-b.png" href="https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjj157UwJnmAhVkL6YKHdSeA5IQPAgH" /> */}
                                     <button className="seemore-btn" onClick={handleOpenModalReview}>
                                         {/* ModalReview 元件 */}
-                                        <ModalReview isOpen={isModalReviewOpen} onClose={handleCloseModalReview} />
+                                        
                                         <img className="ball" src="./images/Vector-circle-b.png" alt="" />
                                         <span className="font">See All</span>
                                         <img className="arr" src="./images/Vector-arr.png" alt="" />

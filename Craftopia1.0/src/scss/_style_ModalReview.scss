@@ -6,8 +6,7 @@
     width: 1280px;
     max-width: 1280px;
     height: auto;
-    // border: rgb(25, 0, 255) solid;
-    // overflow: hidden;
+
 }
 
 .reviewContent {
@@ -27,7 +26,6 @@
 
         figure {
             height: 100%;
-            // width: 100%;
             overflow: hidden;
             aspect-ratio: 4 / 3;
 
@@ -103,7 +101,6 @@
 
     .switchBtn {
         display: block;
-        // border: yellow solid;
         position: relative;
 
 
@@ -119,6 +116,8 @@
             top: 2px;
             left: 60px;
             z-index: 10;
+            box-shadow: 0 0 8px $color-coffee-primary;
+
 
             &:hover {
                 cursor: default;
@@ -134,35 +133,48 @@
             transition: all .2s linear;
             top: 55px;
             left: 5px;
+            
+            animation: breathing 2s ease-in-out infinite;
+            
+            @keyframes breathing {
+                
+                0%,
+                100% {
+                    transform: scale(1);
+                    opacity: 0.7;
+                }
+                
+                50% {
+                    transform: scale(1.1);
+                    opacity: 0.9;
+                }
+            }
 
             &:hover {
                 scale: 1.04;
                 rotate: 3deg;
+                animation: none;
             }
         }
     }
 
     .slideshow {
-        // border: rgb(255, 0, 0) solid;
         background-color: rgb(0, 0, 0, 0.4);
-        border-radius: $border-r-s;
+        border-radius: $border-r-l;
         display: flex;
         width: calc(100% - 155px);
         margin-left: 155px;
         position: relative;
 
         .thumbnail-container {
-            // border: rgb(255, 141, 47) solid;
             overflow: hidden;
-            // width: 180px;
-            // height: 135px;
             margin-right: 12px;
             border-radius: $border-r-s;
             display: flex;
 
             .thumbnail-wrap {
-                // border: rgb(231, 245, 39) solid;
                 display: flex;
+                margin: 5px;
             }
 
             .thumbnail {
@@ -184,8 +196,8 @@
             }
 
             .active {
-                border: $color-gold-medium solid 3px;
-                border-radius: $border-r-s;
+                outline: $color-gold-medium solid 3px;
+                border-radius: $border-r-m;
             }
         }
 
@@ -193,11 +205,11 @@
             color: $color-brown-primary;
             background-color: rgb(244, 235, 217, 0.7);
             border: none;
-            border-radius: 4px;
-            height: 135px;
+            border-radius: 50px;
+            height: 140px;
 
             position: absolute;
-            top: 0px;
+            top: 2px;
 
             &:hover {
                 background-color: rgb(244, 235, 217, 0.9);
