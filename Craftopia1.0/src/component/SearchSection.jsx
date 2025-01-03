@@ -227,7 +227,7 @@ function SearchSection({ handleSearch, handleSearchResult }) {
                                 (adultCount > 0 || childCount > 0) ? (
                                     <div>{adultCount} 位成人 , {childCount} 位孩童</div>
                                 ) : (
-                                    <div>想去哪裡做？</div>
+                                    <div>幾個人？</div>
                                 )
                             }
 

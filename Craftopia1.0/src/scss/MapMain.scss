@@ -491,10 +491,11 @@
 
                 .storeDetail {
 
+                    margin-top: 10px;
+
                     p {
                         font-size: 14px;
-                        margin: 10px 0;
-
+                        
                     }
 
                     .storeTime {
@@ -674,7 +675,7 @@
 
         z-index: 30;
         width: 80%;
-        max-width: 1152px;
+        max-width: 1200px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-between;
@@ -954,37 +955,6 @@
     }
 }
 
-
-
-
-/* totop按鈕 */
-// .toTop {
-//     z-index: 30;
-
-
-//     .toTop-btn {
-//         border: none;
-//         background: none;
-//         cursor: pointer;
-
-
-//         #toTopHover {
-//             display: none;
-//         }
-
-
-//         &:hover {
-//             >#toTop {
-//                 display: none;
-//             }
-
-
-//             #toTopHover {
-//                 display: block;
-//             }
-//         }
-//     }
-// }
 
 
 

@@ -133,9 +133,9 @@ const ModalReview = ({ isOpen, onClose }) => {
     };
     return (
         <>
-            <div className="modalReview-overlay" onClick={onClose} >
+            <div className="modalReview-overlay" onClick={handleModalClick}>
                 {/* ↑若點擊窗外要觸發關閉，加上 onClick={onClose} */}
-                <div className="modalReview-overlay" onClick={handleModalClick}>
+                <div className="modalReview-content" >
                     <section className="reviewWrap">
                         <div className="reviewContent">
                             <div className="rvwLeft">

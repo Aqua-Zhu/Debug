@@ -611,6 +611,7 @@
     }
 
     @media ($mediaSm) {
+        margin-bottom: 30px;
         #banner-B {
             .banner-arr {
                 bottom: 200px;
@@ -661,7 +662,7 @@
 
     .wrapper {
         display: flex;
-        margin: 8% 15% 15%;
+        margin: 8% 15% 0 15%;
         height: 550px;
         position: relative;
         z-index: 998;
@@ -742,7 +743,9 @@
 
 
     #line-1 {
-        margin-top: 200px;
+        img{
+            height: 500px;
+        }
     }
 
     /*裝飾區*/
@@ -780,7 +783,7 @@
         position: absolute;
         width: 25%;
         z-index: 888;
-        bottom: 350px;
+        bottom: 200px;
     }
 
     @media ($mediaMdUp) {
@@ -998,6 +1001,12 @@
 
         #tool {
             bottom: 750px;
+        }
+        #line-1{
+            img{
+                height: 250px;
+            }
+            
         }
     }
 
@@ -2103,11 +2112,12 @@
 
 body {
     background-image: url(./images/BG-texture-400.jpg);
+    background-attachment: fixed;//背景固定
     background-repeat: repeat;
     letter-spacing: 2px; //zinia
     overflow-x: hidden; //Yuan-qa
     font-family: "Noto Sans TC", sans-serif; //Yuan-qa
-    font-weight: 500; //Yuan-qa
+    font-weight: 400; //Yuan-qa
     letter-spacing: 2px; //Yuan-qa
 }
 

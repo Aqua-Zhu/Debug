@@ -494,6 +494,7 @@
     justify-content: space-between;
 
     width: 80%;
+    max-width: 1200px;
     z-index: 20;
     padding-bottom: 20px;
 
@@ -786,7 +787,7 @@
 .classList {
 
     width: 80%;
-    max-width: 1152px;
+    max-width: 1200px;
     margin-bottom: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -999,6 +1000,7 @@
         font-size: 18px;
         margin: 28px 0;
         width: 80%;
+        max-width: 1200px;
         color: #3d3d3d;
 
         p{

@@ -121,7 +121,7 @@ function ClassList() {
                                 </div>
                                 <div className="classPrice">
                                     <p className="classStoreName"><a href="#">{course.storeName}</a></p>
-                                    <p className="price">$ {course.price}</p>
+                                    <p className="price">$ {course.price.toLocaleString()}</p>
                                 </div>
 
                             </div>
@@ -208,7 +208,7 @@ function ClassList() {
                                 </div>
                                 <div className="classPrice">
                                     <p className="classStoreName"><a href="#">{course.storeName}</a></p>
-                                    <p className="price">$ {course.price}</p>
+                                    <p className="price">$ {course.price.toLocaleString()}</p>
                                 </div>
 
                             </div>
