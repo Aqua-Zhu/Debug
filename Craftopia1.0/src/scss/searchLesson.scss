@@ -294,6 +294,9 @@
 
 
 }
+#newestClass{
+    margin-bottom: 50px;
+}
 
 @media ($mediaMd) {
 
@@ -1050,8 +1053,6 @@
     position: relative;
     font-weight: bold;
     cursor: pointer;
-
-
 
     .arr {
         margin-left: 65px;
