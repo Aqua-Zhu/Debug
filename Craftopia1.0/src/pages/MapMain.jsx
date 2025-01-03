@@ -19,6 +19,9 @@ function MapMain() {
 
   // 管理課程搜尋篩選條件
   const [filteredStore, setFilteredStore] = useState(markersData); //初始狀態未篩選顯示所有課程
+  
+  // 管理搜尋輸入匡輸入的店名
+  const [searchTerm, setSearchTerm] = useState(""); 
 
 
   /* 搜尋處理條件設定 */
@@ -30,7 +33,10 @@ function MapMain() {
       const matchesLocation = location ? store.location === location : true;
       const matchesType = type ? store.type === type : true;
 
-      return matchesLocation && matchesType;
+      // 新增根據店名的條件
+      const matchesName = !searchTerm || store.storeName.includes(searchTerm);
+
+      return matchesLocation && matchesType && matchesName;
 
     });
 
@@ -40,7 +46,7 @@ function MapMain() {
 
   /* AOS 初始化 */
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
     AOS.init(); // 初始化
 
   }, [])
@@ -58,25 +64,7 @@ function MapMain() {
 
   return (
     <>
-{/* 
-      <header id="topbar">
 
-        <h1 className="logo"><a href="./index.html">
-
-          <img src="./images/logo.svg" alt="Craftopia LOGO" />
-
-        </a></h1>
-
-        <nav className="navigation">
-          <ul className="search">
-            <li><a href="#"><img src="./images/icons-search.svg" alt="搜尋課程" />
-              搜尋課程</a></li>
-          </ul>
-          <ul className="menu">
-            <li><img src="./images/icons-menu.svg" alt="menu選單" /></li>
-          </ul>
-        </nav>
-      </header> */}
       <TopbarB/>
 
       <main id="MapPage">
@@ -86,7 +74,8 @@ function MapMain() {
         <section className="map">
           <MyGmap filteredStore={filteredStore} />
 
-          <MapSelect handleSearch={handleSearch} />
+          <MapSelect handleSearch={handleSearch} searchTerm={searchTerm} 
+            setSearchTerm={setSearchTerm} />
 
 
         </section>
@@ -118,7 +107,7 @@ function MapMain() {
                       </figure>
                       <div className="storeTag">
                         <p className={`storeType ${store.tag === "pottery" ? "pottery" : ""}`} style={{
-                          backgroundImage: `url('../images/tag-${store.tag}.svg')`,
+                          backgroundImage: `url('./images/tag-${store.tag}.svg')`,
                         }}>{store.type}</p>
                         <p className="storeLocation">{store.location}</p>
                       </div>
@@ -175,53 +164,53 @@ function MapMain() {
       {/* 頁尾區 */}
 
       <footer>
-                        <div className="footer-bgDeco">
-                            <img src="./images/footer-deco.png" alt="" />
-                        </div>
-                        <div className="foot-content">
-                            <a href="craftopia-01.html"><img src="./images/footer-logo.svg" alt="" /></a>
-    
-                            {/* 選單 */}
-                            <ul className="menu">
-                                <li id="home"><Link to='/'>首頁</Link></li>
-                                <li>
-                                    <Link to='/mapmain'>發掘店家</Link>
-                                    <ul>
-                                        <li><Link to='/mapmain'>金工</Link></li>
-                                        <li><Link to='/mapmain'>陶藝</Link></li>
-                                        <li><Link to='/mapmain'>皮革</Link></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <Link to='/classpage'>預約課程</Link>
-                                    <ul>
-                                        <li><Link to='/classpage'>熱門課程</Link></li>
-                                        <li><Link to='/classpage'>最新課程</Link></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <Link to='/member'>會員中心</Link>
-                                    <ul>
-                                        <li><Link to='/member'>會員資料</Link></li>
-                                        <li><Link to='/member'>預約紀錄</Link></li>
-                                        <li><Link to='/member'>收藏紀錄</Link></li>
-                                        <li><Link to='/member'>我的分享</Link></li>
-                                    </ul>
-                                </li>
-    
-                                <li>
-                                    <Link to='/qa'>常見問題</Link>
-                                    <ul>
-                                        <li><Link  to='/qa'>會員相關</Link></li>
-                                        <li><Link  to='/qa'>預約相關</Link></li>
-                                        <li><Link  to='/qa'>課程相關</Link></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <small> Copyright© 2024 CRAFTOPIA All rights reserved. </small>
-    
-                    </footer>
+        <div className="footer-bgDeco">
+          <img src="./images/footer-deco.png" alt="" />
+        </div>
+        <div className="foot-content">
+          <img src="./images/footer-logo.svg" alt="" />
+
+          <ul className="menu">
+            <li><a href="">首頁</a></li>
+            <li>
+              <a href="">發掘店家</a>
+              <ul>
+                <li><a href="">金工</a></li>
+                <li><a href="">陶藝</a></li>
+                <li><a href="">皮革</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">預約課程</a>
+              <ul>
+                <li><a href="">熱門課程</a></li>
+                <li><a href="">最新課程</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="">會員中心</a>
+              <ul>
+                <li><a href="">會員資料</a></li>
+                <li><a href="">預約紀錄</a></li>
+                <li><a href="">收藏紀錄</a></li>
+                <li><a href="">我的分享</a></li>
+              </ul>
+            </li>
+
+
+            <li>
+              <a href="">常見問題</a>
+              <ul>
+                <li><a href="">會員相關</a></li>
+                <li><a href="">預約相關</a></li>
+                <li><a href="">課程相關</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <small> Copyright© 2024 CRAFTOPIA All rights reserved. </small>
+      </footer>
 
 
     </>

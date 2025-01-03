@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import Hearttoggle from "./Hearttoggle";
 import { Link } from 'react-router-dom';
 
-function Results({ filteredCourses, resultVisible }) {
+function Results({ filteredCourses, resultVisible , selectedOption }) {
 
     const [oderIsOpen, setOderIsOpen] = useState(false);
     const [classifyIsOpen, setClassifyIsOpen] = useState(false);
@@ -16,7 +16,41 @@ function Results({ filteredCourses, resultVisible }) {
     const [selectedFilters, setSelectedFilters] = useState({ price: [], duration: [], level: [] });
 
     const priceOptions = ["1000元以下", "1000-2000元", "2001-4000元", "4000元以上"];
+
+    // 設定價錢範圍
+    const checkPriceRange = (price, range) => {
+        switch (range) {
+            case "1000元以下":
+                return price <= 1000;
+            case "1000-2000元":
+                return price >= 1000 && price <= 2000;
+            case "2001-4000元":
+                return price >= 2001 && price <= 4000;
+            case "4000元以上":
+                return price > 4000;
+            default:
+                return true; // 如果篩選條件不存在，返回 true
+        }
+    };
+
+
     const durationOptions = ["0-1hr", "2hr-3hr", "4hr以上"];
+
+    // 設定課程時間範圍
+    const checkDurationRange = (duration, range) => {
+        switch (range) {
+            case "0-1hr":
+                return duration <= 1;
+            case "2hr-3hr":
+                return duration >= 2 && duration <= 3;
+            case "4hr以上":
+                return duration >= 4;
+            default:
+                return true;
+        }
+    };
+
+
     const levelOptions = ["入門", "進階"];
 
     /* 紀錄分類篩選器選擇的選項 */
@@ -49,6 +83,47 @@ function Results({ filteredCourses, resultVisible }) {
     };
 
 
+    const [classifiedCourses, setClassifiedCourses] = useState(filteredCourses); //初始狀態未篩選顯示所有課程
+
+    // 當 filteredCourses 更新時，保持 classifiedCourses 同步
+    useEffect(() => {
+        setClassifiedCourses(filteredCourses);
+    }, [filteredCourses]);
+
+    const handleFilter = () => {
+        const { price, duration, level } = selectedFilters;
+
+        const classifiedCourses = filteredCourses.filter((course) => {
+            // 篩選條件
+            const matchesPrice = price.length
+                ? price.some((range) => checkPriceRange(course.price, range))
+                : true; // 如果沒選任何價格篩選條件，則全部通過
+
+            const matchesDuration = duration.length
+                ? duration.some((range) => checkDurationRange(course.duration, range))
+                : true; // 如果沒選任何時間篩選條件，則全部通過
+
+            const matchesLevel = level.length
+                ? level.includes(course.level)
+                : true; // 如果沒選任何級別篩選條件，則全部通過
+
+            // 返回符合所有條件的課程
+            return matchesPrice && matchesDuration && matchesLevel;
+        });
+
+        setClassifiedCourses(classifiedCourses); // 更新篩選後的課程資料
+    };
+
+    // 監聽分類篩選器選項變化
+    useEffect(() => {
+        handleFilter();
+    }, [selectedFilters, filteredCourses]); // 監聽所有篩選條件的變化
+
+
+
+
+
+
     /* 課程排序選擇 */
     const [selectedOrderOption, setSelectedOrderOption] = useState("排序");
     const orderOptions = [
@@ -64,7 +139,7 @@ function Results({ filteredCourses, resultVisible }) {
     const [sortOption, setSortOption] = useState(null);
 
     // 根據選擇的排序方式改變課程顯示順序
-    const sortedCourses = [...filteredCourses].sort((a, b) => {   //把搜尋顯示的課程丟進來重新排序
+    const sortedCourses = [...classifiedCourses].sort((a, b) => {   //把搜尋顯示的課程丟進來重新排序
 
         if (sortOption === "最新") {
             return new Date(b.releaseDate) - new Date(a.releaseDate); // 最新日期優先
@@ -79,6 +154,8 @@ function Results({ filteredCourses, resultVisible }) {
         }
 
     });
+
+
 
 
 
@@ -143,12 +220,6 @@ function Results({ filteredCourses, resultVisible }) {
 
 
 
-
-
-
-
-
-
     /* AOS 初始化 */
 
     useEffect(() => {
@@ -162,19 +233,22 @@ function Results({ filteredCourses, resultVisible }) {
         <>
 
 
-            {resultVisible && (
+            {resultVisible && (selectedOption.location || selectedOption.type != null) && (
 
-                <section data-aos="fade-up" data-aos-offset="100" id="searchResault" className="courseSection" >
+                <section data-aos="fade-up" data-aos-offset="100" id="searchResault" className={`courseSection ${classifiedCourses.length <= 0 ? "noCard" : ""}`} >
 
                     <figure className="listTitle">
                         <img src="./images/title-resault.svg" alt="" />
                     </figure>
+
+                    
 
 
                     {filteredCourses.length > 0 ? (
 
 
                         <>
+                            
                             <div data-aos="fade-right" data-aos-offset="80" className="allFilter">
                                 <div className={`filter classify  ${classifyIsOpen ? "open" : ""}   ${selectedFilters.price.length !== 0 ||
                                     selectedFilters.duration.length !== 0 ||
@@ -252,6 +326,7 @@ function Results({ filteredCourses, resultVisible }) {
 
                             </div>
 
+                            <h3 className="resultOption">符合 <p>{selectedOption.location} {selectedOption.type} </p>的相關課程:</h3>
 
                             <div className="classList">
                                 {sortedCourses.map((course) => {
@@ -305,8 +380,9 @@ function Results({ filteredCourses, resultVisible }) {
 
 
                     ) : (
-                        <p className="noresult">沒有符合的課程，換個條件試試看吧！</p>
+                        <p className="noresult">沒有符合 <span>{selectedOption.location} {selectedOption.type}</span> 的課程，換個條件試試看吧！</p>
                     )}
+
 
 
 

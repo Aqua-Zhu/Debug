@@ -190,7 +190,7 @@ export default function Home() {
                     <div id="feature-all">
                         <section id="about" data-aos="flip-up">
                             <header>
-                                <figure className="title"><img src="./images/title-aboutus.png" alt="" /></figure>
+                                <figure className="title"><img src="./images/title-aboutus.svg" alt="" /></figure>
                             </header>
 
                             <article>
