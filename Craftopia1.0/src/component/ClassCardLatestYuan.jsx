@@ -48,8 +48,8 @@ function ClassCardLatestYuan() {
                             <img className="photo" src={course.photo} alt="" />
 
                             <div className="tagHotorNew ">
-                                <img src="./images/labels-hot.svg" alt="" />
-                                <img src="./images/labels-new.svg" alt="" />
+                                <img src="./images/labels-hot.png" alt="" />
+                                <img src="./images/labels-new.png" alt="" />
                             </div>
                         </Link>
                     </figure>

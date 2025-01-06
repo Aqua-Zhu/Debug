@@ -58,8 +58,8 @@ function ClassCardLatestClass() {
                                 <p>See More <img src="./images/icons-arrowRightBold.svg" alt="" /></p>
                                 <img className="photo" src={card.img} alt="" />
                                 <div className="tagHotorNew ">
-                                    <img src="./images/labels-hot.svg" alt="" />
-                                    <img src="./images/labels-new.svg" alt="" />
+                                    <img src="./images/labels-hot.png" alt="" />
+                                    <img src="./images/labels-new.png" alt="" />
                                 </div>
                             </a>
                         </figure>

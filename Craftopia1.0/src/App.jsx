@@ -6,7 +6,6 @@ import Member from "./pages/Member";
 import SearchLesson from "./pages/SearchLesson";
 import ClassPage from "./pages/ClassPage";
 import MapMain from "./pages/MapMain";
-import ModalLogIn from "./component/ModalLogIn";
 import Activity from "./pages/Activity";
 
 export default function App() {

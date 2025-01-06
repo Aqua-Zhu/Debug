@@ -230,9 +230,9 @@ export default function Qa() {
                                 </li>
                             </ul>
                         </div>
-                        <small> Copyright© 2024 CRAFTOPIA All rights reserved. </small>
+                        <small> Copyright© 2024 CRAFTOPIA All rights reserved.此為學生練習作品，不作商業用途 </small>
     
-                    </footer>
+                    </footer>   
 
         </>
     )

@@ -7,6 +7,7 @@ import GoogleMap from "../component/Google Map";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; //載入node modules中的套件前面不加./
 import '../scss/style-activity.scss';
+import { Link } from "react-router-dom";
 
 
 function Activity() {
@@ -142,61 +143,56 @@ function Activity() {
                     </div>
                 </section>
             </main >
-
+        
             {/* 頁尾區 */}
             <footer>
-                <div className="footer-bgDeco">
-                    <img src="./images/footer-deco.png" alt="" />
-                </div>
-                <div className="foot-content">
-                    <img src="./images/footer-logo.svg" alt="" />
-                    {/* 選單 */}
-                    <ul className="menu">
-                        <li><a href="">首頁</a></li>
-                        <li>
-                            <a href="">發掘店家</a>
-                            <ul>
-                                <li><a href="">金工</a></li>
-                                <li><a href="">陶藝</a></li>
-                                <li><a href="">皮革</a></li>
+                        <div className="footer-bgDeco">
+                            <img src="./images/footer-deco.png" alt="" />
+                        </div>
+                        <div className="foot-content">
+                            <a href="craftopia-01.html"><img src="./images/footer-logo.svg" alt="" /></a>
+    
+                            {/* 選單 */}
+                            <ul className="menu">
+                                <li id="home"><Link to='/'>首頁</Link></li>
+                                <li>
+                                    <Link to='/mapmain'>發掘店家</Link>
+                                    <ul>
+                                        <li><Link to='/mapmain'>金工</Link></li>
+                                        <li><Link to='/mapmain'>陶藝</Link></li>
+                                        <li><Link to='/mapmain'>皮革</Link></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <Link to='/classpage'>預約課程</Link>
+                                    <ul>
+                                        <li><Link to='/classpage'>熱門課程</Link></li>
+                                        <li><Link to='/classpage'>最新課程</Link></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <Link to='/member'>會員中心</Link>
+                                    <ul>
+                                        <li><Link to='/member'>會員資料</Link></li>
+                                        <li><Link to='/member'>預約紀錄</Link></li>
+                                        <li><Link to='/member'>收藏紀錄</Link></li>
+                                        <li><Link to='/member'>我的分享</Link></li>
+                                    </ul>
+                                </li>
+    
+                                <li>
+                                    <Link to='/qa'>常見問題</Link>
+                                    <ul>
+                                        <li><Link  to='/qa'>會員相關</Link></li>
+                                        <li><Link  to='/qa'>預約相關</Link></li>
+                                        <li><Link  to='/qa'>課程相關</Link></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                        <li>
-                            <a href="">預約課程</a>
-                            <ul>
-                                <li><a href="">熱門課程</a></li>
-                                <li><a href="">最新課程</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">商城</a>
-                            <ul>
-                                <li><a href="">商城</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">會員中心</a>
-                            <ul>
-                                <li><a href="">會員資料</a></li>
-                                <li><a href="">預約紀錄</a></li>
-                                <li><a href="">收藏紀錄</a></li>
-                                <li><a href="">我的分享</a></li>
-                            </ul>
-                        </li>
-
-
-                        <li>
-                            <a href="">常見問題</a>
-                            <ul>
-                                <li><a href="">會員相關</a></li>
-                                <li><a href="">預約相關</a></li>
-                                <li><a href="">課程相關</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <small> Copyright© 2024 CRAFTOPIA All rights reserved. </small>
-            </footer>
+                        </div>
+                        <small> Copyright© 2024 CRAFTOPIA All rights reserved.此為學生練習作品，不作商業用途 </small>
+    
+                    </footer>   
 
             <script src="./js/jquery-3.7.1.min.js"></script>
         </>
