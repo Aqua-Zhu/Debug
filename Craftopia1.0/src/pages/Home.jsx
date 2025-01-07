@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ToTop from "../component/ToTop";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";     
 
 
 export default function Home() {
@@ -117,7 +117,6 @@ export default function Home() {
                                 </ul>
                                 <Seemore text={'see more'} imgBall={"./images/Vector-circle-db.png"} href='/classpage' />
                             </article>
-
 
                         </div>
                         <article id="cho-3" data-aos="fade-right">

@@ -12,10 +12,10 @@ export default function App() {
     return (
         <>
             <Routes>
-                <Route path="/" element={<Home />} ></Route>
-                <Route path="/shop" element={<Shop />}></Route>
-                <Route path="/qa" element={<Qa />} ></Route>
-                <Route path="/member" element={<Member />}  ></Route>
+                <Route path="/" element={<Home/>} ></Route>
+                <Route path="/shop" element={<Shop/>}></Route>
+                <Route path="/qa" element={<Qa/>} ></Route>
+                <Route path="/member" element={<Member/>}  ></Route>
                 <Route path="/search" element={<SearchLesson/>}></Route>
                 <Route path="/classpage" element={<ClassPage/>}></Route>
                 <Route path="/mapmain" element={<MapMain/>}></Route>

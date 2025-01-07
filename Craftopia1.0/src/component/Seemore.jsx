@@ -1,12 +1,12 @@
 import $ from 'jquery'
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
 
 // import SearchLesson from '../pages/SearchLesson';
 
 export default function Seemore({ text, imgBall, href }) {
 
-    
     useEffect(() => {
         $(function () {
             $('.seemore-btn').click(function (e) {
@@ -15,7 +15,13 @@ export default function Seemore({ text, imgBall, href }) {
                 setTimeout(function () {
 
                     // 切換到另一頁       
-                    window.location.href = href; 
+                    // console.log('href:', href);
+                    // window.location.href = '/classpage';
+                    window.location = '/classpage';
+                    // <Link to={href} />
+                    // <Link to='/classpage'></Link>
+
+
 
                 }, 1000);
                 $(this).addClass('shot');

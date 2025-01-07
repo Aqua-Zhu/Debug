@@ -55,14 +55,12 @@ export default function SearchLesson() {
     <>
     <TopbarB/>
       <main id='searchlesson'>
-    
+
         <section id="SearchBanner">
           <h2 className='engTitle'>Discover Your Next Creative Journey !</h2>
           <h2>想去哪裡體驗什麼?</h2>
 
-
           <SearchSection handleSearch={handleSearch} handleSearchResult={() => handleSearchResult()} />
-
 
           <figure className="left-filled custom-shake-v shake-constant"><img src="./images/decor-searchBanner-leftbubbleFilled.png" alt="" /></figure>
           <figure className="left-stroke custom-shake-h shake-constant"><img src="./images/decor-searchBanner-leftbubbleStroke.png" alt="" /></figure>
@@ -71,13 +69,9 @@ export default function SearchLesson() {
           <figure className="right-stroke custom-shake-h shake-constant"><img src="./images/decor-searchBanner-rightbubbleStroke.png" alt="" /></figure>
           <figure className="right-tool custom-shake-t shake-constant"><img src="./images/decor-searchBanner-RightTool.png" alt="" /></figure>
 
-
         </section>
         
-
         
-
-
         <Results filteredCourses={filteredCourses} resultVisible={resultVisible} selectedOption={selectedOption}/>
 
         <ClassList />

@@ -89,7 +89,7 @@ function ClassList() {
                             <div data-aos="fade-up" data-aos-offset="50" key={course.id} className={`classCard`}>
 
                                 <figure className="classPhoto">
-                                    <Link to='/ClassPage'>
+                                    <Link to='/classpage'>
 
                                         <p>See More <img src="./images/icons-arrowRightBold.svg" alt="" /></p>
                                         <img className="photo" src={`./images/course/${course.image}`} alt="" />
@@ -115,12 +115,12 @@ function ClassList() {
                                     <p className="classTime">{course.duration}hr</p>
                                 </div>
                                 <div className="classTitle">
-                                    <h3><a href="#">{course.courseName}</a></h3>
+                                    <h3><Link to='/classpage'>{course.courseName}</Link></h3>
 
                                     <Hearttoggle heartFillId='heartfill5' heartStrikeId='heartstrike5' />
                                 </div>
                                 <div className="classPrice">
-                                    <p className="classStoreName"><a href="#">{course.storeName}</a></p>
+                                    <p className="classStoreName"><Link to='/shop'>{course.storeName}</Link></p>
                                     <p className="price">$ {course.price.toLocaleString()}</p>
                                 </div>
 
@@ -180,7 +180,7 @@ function ClassList() {
                             <div data-aos="fade-up" key={course.id} className={`classCard`}>
 
                                 <figure className="classPhoto">
-                                    <a href="#">
+                                    <Link to='/classpage'>
                                         <p>See More <img src="./images/icons-arrowRightBold.svg" alt="" /></p>
                                         <img className="photo" src={`./images/course/${course.image}`} alt="" />
                                         <div className="tagHotorNew">
@@ -196,18 +196,18 @@ function ClassList() {
                                         </div>
 
 
-                                    </a>
+                                    </Link>
                                 </figure>
                                 <div className="classTag">
                                     <p className="classLevel">{course.level}</p>
                                     <p className="classTime">{course.duration}hr</p>
                                 </div>
                                 <div className="classTitle">
-                                    <h3><a href="#">{course.courseName}</a></h3>
+                                    <h3><Link to='/classpage'>{course.courseName}</Link></h3>
                                     <Hearttoggle heartFillId='heartfill5' heartStrikeId='heartstrike5' />
                                 </div>
                                 <div className="classPrice">
-                                    <p className="classStoreName"><a href="#">{course.storeName}</a></p>
+                                    <p className="classStoreName"><Link to='/shop'>{course.storeName}</Link></p>
                                     <p className="price">$ {course.price.toLocaleString()}</p>
                                 </div>
 
