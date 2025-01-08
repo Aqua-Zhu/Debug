@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 // import SearchLesson from '../pages/SearchLesson';
 
 export default function Seemore({ text, imgBall, href }) {
-
+    // 搬到home.jsx裡面執行
     useEffect(() => {
         $(function () {
             $('.seemore-btn').click(function (e) {
                 e.preventDefault();
-
+                
                 setTimeout(function () {
 
                     // 切換到另一頁       
@@ -20,8 +20,6 @@ export default function Seemore({ text, imgBall, href }) {
                     window.location = '/classpage';
                     // <Link to={href} />
                     // <Link to='/classpage'></Link>
-
-
 
                 }, 1000);
                 $(this).addClass('shot');
