@@ -17,7 +17,7 @@ export default function Seemore({ text, imgBall, href }) {
                     // 切換到另一頁       
                     // console.log('href:', href);
                     // window.location.href = '/classpage';
-                    window.location = '/classpage';
+                    window.location = '#/classpage';
                     // <Link to={href} />
                     // <Link to='/classpage'></Link>
 

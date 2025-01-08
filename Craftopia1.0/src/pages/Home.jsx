@@ -181,7 +181,7 @@ export default function Home() {
                         <figure className="blob-14"><img src="./images/blob-14.svg" alt="" /></figure>
                         <figure id="tool-4"><img src="./images/cSeat.png" alt="" /></figure>
                         <figure className="line-3"><img src="./images/line-3.png" alt="" /></figure>
-                        <p className="Info-btn" href="" data-aos="fade-up"><Seemore text={'All Info'} imgBall={"./images/Vector-circle-b.png"} href='/classpage' /></p>
+                        <p className="Info-btn" href="" data-aos="fade-up"><Seemore text={'All Info'} imgBall={"./images/Vector-circle-b.png"} href='#/classpage' /></p>
 
                     </section>
                     {/* 關於我們 */}
