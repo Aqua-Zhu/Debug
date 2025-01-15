@@ -66,8 +66,8 @@ const ModalLogIn = ({ isOpen, onClose }) => {
                                     <Link to='/member' id="loginBtn">
                                     <button type="submit" id="memberIn">登入</button>
                                     <hr />
-                                    <button id="googleLogin"><FcGoogle /> 以 google 繼續</button>
-                                    <button id="fbLogin"><FaFacebookF /> 以 facebook 繼續</button>
+                                    <button id="googleLogin"><FcGoogle /> &nbsp;&nbsp;以 google 繼續</button>
+                                    <button id="fbLogin"><FaFacebookF style={{color:'#0866FF'}}/> &nbsp;以 facebook 繼續</button>
                                     </Link>
                                 </form>
                             </div>
@@ -102,8 +102,8 @@ const ModalLogIn = ({ isOpen, onClose }) => {
                                     </div>
                                     <button type="submit" id="createMember">註冊</button>
                                     <hr />
-                                    <button id="googleLogin-register"><FcGoogle /> 以 google 繼續</button>
-                                    <button id="fbLogin-register"><FaFacebookF /> 以 facebook 繼續</button>
+                                    <button id="googleLogin-register"><FcGoogle /> &nbsp;&nbsp;以 google 繼續</button>
+                                    <button id="fbLogin-register"><FaFacebookF style={{color:'#0866FF'}}/> &nbsp;以 facebook 繼續</button>
                                 </form>
                             </div>
                         )}

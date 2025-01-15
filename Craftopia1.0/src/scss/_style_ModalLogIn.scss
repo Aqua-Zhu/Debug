@@ -191,7 +191,9 @@
             #fbLogin-register{
                 border: solid 1px $color-coffee-dark;
                 width: auto;
-                
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             #createMember{
                 align-self: center;

@@ -59,7 +59,7 @@ function ClassCardLatestYuan() {
                     </div>
                     <div className="classTitle">
                         <h3><a href="#">{course.courseName}</a></h3>
-                        <Hearttoggle heartFillId='heartfill5' heartStrikeId='heartstrike5' />
+                        <Hearttoggle heartFillId='heartfill5' heartStrikeId='heartstrike5' defaultChecked={true} />
                     </div>
                     <div className="classPrice">
                         <p className="classStoreName"><a href="#">{course.storeName}</a></p>
